@@ -1,7 +1,11 @@
 import React, {useState} from 'react'
+import {Navigate} from 'react-router-dom'
 import Axios from 'axios'
+
 let CreateProduct = ()=> {
   let [product,setProduct]= useState({name:"", image:"", price:"", qty:"", info:""})
+  let [isCreated, setCreated] = useState(false)
+
   let changeHandler= (event)=>{
      setProduct({...product,[event.target.name]:event.target.value})
   }
@@ -16,10 +20,12 @@ let CreateProduct = ()=> {
     })
   }
   let submitHandler = (event)=>{
+    event.preventDefault()
     let url = 'http://127.0.0.1:5000/api/products/'
     Axios.post(url, product)
     .then((resp)=>{
         console.log(resp);
+        setCreated(true)
     })
     .catch((err)=>{
       console.log(err);
@@ -30,7 +36,9 @@ let CreateProduct = ()=> {
     <div>
       <div className="container mt-5">
         <pre>{JSON.stringify(product)}</pre>
-        <div className="row">
+        {
+          isCreated ? <><Navigate to="/admin"/></>:<>
+          <div className="row">
           <div className="col-md-5">
             <div className="card">
               <div className="card-header bg-secondary text-white">
@@ -59,9 +67,12 @@ let CreateProduct = ()=> {
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  )
+      </>
+    }
+        
+  </div>
+</div>
+)
 }
 
 export default CreateProduct

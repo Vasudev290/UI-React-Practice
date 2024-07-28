@@ -58,14 +58,14 @@ Axios.delete(url)
                     {
 
                       product.map((product,index)=>{
-                        return<tr>
+                        return<tr key={index}>
                           <td>{index+1}</td>
                           <td>{product.name}</td>
                           <td><img src={product.image} height={"75px"} alt="" /></td>
                           <td>{product.price}</td>
                           <td>{product.qty}</td>
                           <td>
-                            <Link to="/update-product/" className='btn btn-success'>UPDATE</Link>
+                            <Link to={`/updateProduct/${product._id}`} className='btn btn-success'>UPDATE</Link>
                             <button onClick={deleteProduct.bind(null,product._id)} className='btn btn-danger ml-2'>DELETE</button>
                           </td>
                         </tr>
