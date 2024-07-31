@@ -1,19 +1,25 @@
 import React from 'react'
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './Components/Navbar/Navbar'
+import Home from './Components/MainFiles/Home'
+import Users from './Components/MainFiles/Users'
+import { store } from './Redux/Store'
 import { Provider } from 'react-redux'
-import Message from './Components/Message/Message'
-import Counter from './Components/Counter/Counter'
-import store from './Redux/Store'
 let App = () => {
-  return<div>
-    <Provider store={store}>
-        <h1>App Component</h1>
-        <hr />
-        <Message />
-        <hr />
-        <Counter />
-    </Provider>    
+  return (
+    <div>
+      <Provider store={store}>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path='/home' element={<Home/>} />
+          <Route path='/users' element={<Users/>} /> 
+         </Routes>
+      </Router>
+      </Provider>
     </div>
-  
+  )
 }
 
 export default App
