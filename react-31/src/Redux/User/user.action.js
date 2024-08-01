@@ -1,5 +1,4 @@
 import Axios from 'axios'
-import Users from '../../Components/MainFiles/Users'
 //Action Types
 let USER_REQ = 'USER_REQ'
 let USER_SUCCESS= 'USER_SUCCESS'
