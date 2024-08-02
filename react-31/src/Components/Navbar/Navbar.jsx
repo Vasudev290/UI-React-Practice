@@ -6,6 +6,8 @@ const Navbar = () => {
     <div className='ml-auto'>
         <ul className='navbar-nav'>
             <li><Link to="/home" className='nav-link'>Home</Link></li>
+            <li><Link to="/reg" className='nav-link'>Regsitration - UseRef()</Link></li>
+            <li><Link to="/memo" className='nav-link'>Use Memo</Link></li>
             <li><Link to="/users" className='nav-link'>Users</Link></li>
         </ul>
     </div>
