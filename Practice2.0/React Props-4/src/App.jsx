@@ -1,5 +1,5 @@
 import React from 'react'
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import Product from './Component/Product'
 import Message from './StateComp/Message'
 

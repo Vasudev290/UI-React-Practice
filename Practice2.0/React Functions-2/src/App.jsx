@@ -1,5 +1,5 @@
 import React from 'react'
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import Header from './Comoponent/Header'
 import Slider from './Comoponent/Slider'
 import Footer from './Comoponent/Footer'
