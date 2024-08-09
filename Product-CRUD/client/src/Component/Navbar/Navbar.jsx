@@ -8,6 +8,7 @@ let Navbar =()=>{
             <li><Link to='/' className='nav-link'>Home</Link></li>
             <li><Link to='/product' className='nav-link'>Products</Link></li>
             <li><Link to='/admin' className='nav-link'>Admin</Link></li>
+            {/* <li><a href='/admin' className='nav-link'>Admin</a></li> */}
            {/*  <li><Link to='/create' className='nav-link'>CreateProduct</Link></li> */}
         </ul>
     </div>
