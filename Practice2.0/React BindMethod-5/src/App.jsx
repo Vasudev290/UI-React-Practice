@@ -1,5 +1,5 @@
 import React from 'react'
-import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/css/bootstrap.css'
 import Message from './Components/Message'
 import MessageBind from './Components/MessageClsBind'
 import MessageFunBind from './Components/MessageFunBind'
