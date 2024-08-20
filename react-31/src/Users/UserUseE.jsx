@@ -1,20 +1,21 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Axios from 'axios'
-const User = () => {
+const UseruseE = () => {
     let [user, setUser]=useState([])
-
-    let getUser= ()=> {
-       Axios.get('https://jsonplaceholder.typicode.com/users')
-       .then((resp)=>{
-        setUser(resp.data)
-       })
-       .catch(()=> {})
-    }
+    
+useEffect(()=>{
+    Axios.get('https://jsonplaceholder.typicode.com/users')
+    .then((resp)=>{
+     setUser(resp.data)
+    })
+    .catch(()=> {})
+})
+    
   return (
     <div>
         <h2>User Component</h2>
         <pre>{JSON.stringify(user)}</pre>
-        <button onClick={getUser} className='btn btn-success mb-4'>Click Here to get the data</button>
+        {/* <button onClick={getUser} className='btn btn-success mb-4'>Click Here to get the data</button> */}
         
         <table className='table'>
             <thead className='bg-secondary text-white'>
@@ -49,4 +50,4 @@ const User = () => {
   )
 }
 
-export default User
+export default UseruseE
