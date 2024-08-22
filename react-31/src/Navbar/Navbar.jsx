@@ -12,6 +12,7 @@ const Navbar = () => {
             <li><Link to="/contact" className='nav-link'>Contact</Link></li>
             <li><Link to="/login" className='nav-link'>Login</Link></li>
             <li><Link to="/user" className='nav-link'>User</Link></li>
+            <li><Link to="/reg" className='nav-link'>Resitration</Link></li>
           </ul>
         </div>
       </nav>

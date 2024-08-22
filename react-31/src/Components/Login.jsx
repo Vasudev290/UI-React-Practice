@@ -13,11 +13,10 @@ const Login = () => {
     alert(JSON.stringify(user))
     event.preventDefault()
     console.log(user);
-    
   }
   return (
     <div>
-        <h3>Login Page</h3>
+        <h3>Login Details</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Commodi modi iste necessitatibus ad excepturi eos iure harum magnam voluptatum 
         nobis quam magni, in facere cumque similique tempora laudantium ipsum ut voluptatibus sunt? Hic, 
@@ -33,7 +32,7 @@ const Login = () => {
           <div className='form-group'>
             <input type="text" placeholder='Password' name='Upassword' className='form-control col-md-3' onChange={updateHandler} />
           </div>
-          <input type="submit" className='btn btn-primary' value="Registrtion" />
+          <input type="submit" className='btn btn-success' value="Registrtion" />
           </>
         </form>
     </div>
