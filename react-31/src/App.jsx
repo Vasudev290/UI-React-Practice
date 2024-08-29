@@ -4,6 +4,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import Message from './Component/Message/Message'
 import store from './redux/store'
 import Counter from './Component/Counter/Counter'
+import Product from './Component/Product/Product'
 let App = () => {
   return <div>
 <Provider store={store}>
@@ -11,7 +12,9 @@ let App = () => {
     <hr />
     <Message />
     <hr />
-    <Counter/>
+  <Counter/>
+  <hr />
+  <Product />
 </Provider>
   </div>
 }

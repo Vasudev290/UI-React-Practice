@@ -1,6 +1,6 @@
 import React from 'react'
 import {useDispatch,useSelector} from 'react-redux'
-import {gmAction,gaAction,geAction,gnAction} from '../../redux/message/message.action'
+import {gmAction,gaAction,geAction,gnAction} from '../../redux/Wish/message.action'
 
 const Message = () => {
     let dispatch= useDispatch()

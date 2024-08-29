@@ -1,6 +1,7 @@
 import { combineReducers } from "redux";
-import messageReducer from "./message/message.reducer";
+import messageReducer from "./Wish/message.reducer";
 import counterReducer from "./Counter/counter.reducer";
-let rootReducer= combineReducers({message:messageReducer,counter:counterReducer})
+import producctReducer from "./Product/product.reducer";
+let rootReducer= combineReducers({message:messageReducer,counter:counterReducer,product:producctReducer})
 
 export default rootReducer
