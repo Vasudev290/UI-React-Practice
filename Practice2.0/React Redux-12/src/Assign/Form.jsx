@@ -33,7 +33,15 @@ const togglePasswordVisibility = () => {
                             <input type={passwordVisible ? 'text' : "password"} 
                             placeholder='Password' 
                             className='form-control' />
-                            <span onClick={togglePasswordVisibility}>
+                            <span onClick={togglePasswordVisibility}
+                            style={{
+                                position: 'absolute',
+                                right:'35px',
+                                top:'51%',
+                                transform: 'translateY(-50%)',
+                                cursor:'pointer'
+                            }}
+                            >
                             {passwordVisible ? <FaEyeSlash /> : <FaEye />}
                             </span>
 
