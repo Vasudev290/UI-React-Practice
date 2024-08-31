@@ -37,7 +37,7 @@ const Admin = () => {
             <pre>{JSON.stringify(products)}</pre>
             {
               products.length > 0 ? <>
-              <div className="col-md-8">
+              <div className="col-md-12">
                 <table className='table'>
                   <thead className='bg-primary text-white'>
                     <tr>
@@ -51,7 +51,7 @@ const Admin = () => {
                   <tbody>
                     {
                       products.map((product)=>{
-                        return <tr>
+                        return <tr key={product.name}>
                           <td>{product.name}</td>
                           <td><img src={product.image} width={'70px'} alt="" /></td>
                           <td>{product.price}</td>
