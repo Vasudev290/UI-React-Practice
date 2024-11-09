@@ -23,7 +23,8 @@ const App = () => {
 
 return <div>
    
-    <button onClick={addHandler}>Add</button> {num} <button onClick={minusHandler}>Mins</button>{/* EventListner */} 
+    <button onClick={addHandler}>Add</button> {num} <button onClick={minusHandler}>Minus</button>{/* EventListner */} 
+    {/* <button onClick={()=> setNum1((cur) => cur + 1)}>Add</button> */} {/* Shortcut for adding */}
 </div>
 }
 
