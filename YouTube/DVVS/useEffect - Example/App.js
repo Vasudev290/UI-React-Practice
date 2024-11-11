@@ -1,7 +1,6 @@
 import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
-//import UseEffectEx from './Components/UseEffectEx'
-import ApiIntegration from './Components/ApiIntegration'
+import UseEffectEx from './Components/UseEffectEx'
 
 
 const App = () => {
@@ -9,7 +8,7 @@ const App = () => {
     <div>
       <h2>App Component</h2>
       <hr />
-     <ApiIntegration />
+     <UseEffectEx />
     </div>
   )
 }
