@@ -5,6 +5,7 @@ import FirstComp from './PropsContainer/FirstComp'
 import SecondComp from './PropsContainer/SecondComp'
 import ThirdComp from './PropsContainer/ThirdComp'
 import FourthComp from './PropsContainer/FourthComp'
+import CompA from './propsDestructure/CompA'
 const App = () => {
   return (
     <div>
@@ -14,6 +15,7 @@ const App = () => {
       <SecondComp name= "Mahalakshmi "/>
       <ThirdComp name= "Vasu Dev"/>
       <FourthComp name= "Sushmitha"/>
+      <CompA/>
     </div>
   )
 }
