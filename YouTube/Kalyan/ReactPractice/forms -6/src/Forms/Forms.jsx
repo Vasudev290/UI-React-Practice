@@ -1,14 +1,9 @@
 import React, { useState } from 'react'
 
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-
 const Forms = () => {
 
     const [userName, setUserName] = useState("")
     const [newuserDetails, setNewUserDetails] = useState()
-
-    const notify = () => toast("Your data added successfully..!");
 
 const getUserName = (event) => {
    setUserName(event.target.value)
@@ -17,7 +12,6 @@ const getUserName = (event) => {
 const userDetails = (event) => {
     event.preventDefault()
     setNewUserDetails(userName)
-    notify()
 }
   return (
     <div>
@@ -32,7 +26,6 @@ const userDetails = (event) => {
                         <div className="card-body">
                             <form onSubmit={userDetails}>
                                 <h4>Hello, {newuserDetails}</h4>
-                                <ToastContainer/>
                                 <div className='form-group'>
                                     <input type="text" placeholder='Enter your Name' className='form-control' onChange={getUserName} />
                                 </div> <br />
