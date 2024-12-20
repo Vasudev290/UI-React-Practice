@@ -3,16 +3,20 @@ import React,{useState} from 'react'
 const Form = () => {
     const [user, setUser] = useState({userName: "", userEmail: "", userPassword: "", })
 
-    const userHandler = (e) => {
-        setUser({...user, userName:e.target.value})
-    }
+    // const userHandler = (e) => {
+    //     setUser({...user, userName:e.target.value})
+    // }
 
-    const emailHandler = (e) => {
-        setUser({...user, userEmail: e.target.value})
-    }
+    // const emailHandler = (e) => {
+    //     setUser({...user, userEmail: e.target.value})
+    // }
 
-    const passwordHandler = (e) => {
-        setUser({...user, userPassword:e.target.value})
+    // const passwordHandler = (e) => {
+    //     setUser({...user, userPassword:e.target.value})
+    // }
+
+    const updateHandler = (event) => {
+        setUser({...user,[event.target.name]:event.target.value })
     }
     const submitHandler = (e) => {
         e.preventDefault()
@@ -32,13 +36,13 @@ const Form = () => {
                         <form onSubmit={submitHandler}>
                         <div className="card-body">
                             <div className='form-group'>
-                                <input type="text" placeholder='Name' className='form-control' onChange={userHandler} />
+                                <input type="text" placeholder='Name' className='form-control' name='userName' onChange={updateHandler} />
                             </div>
                             <div className='form-group'>
-                                <input type="email" placeholder='Email' className='form-control' onChange={emailHandler} />
+                                <input type="email" placeholder='Email' className='form-control' name='userEmail' onChange={updateHandler} />
                             </div>
                             <div className='form-group'>
-                                <input type="password" placeholder='Password' className='form-control' onChange={passwordHandler} />
+                                <input type="password" placeholder='Password' className='form-control' name='userPassword' onChange={updateHandler} />
                             </div>
                             <input type="submit" value="Register" className='btn btn-success' />
                         </div>
