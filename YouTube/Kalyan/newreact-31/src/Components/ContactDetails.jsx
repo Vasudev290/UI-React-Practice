@@ -11,11 +11,11 @@ const ContactDetails = (props) => {
           </div>
           <div className="card-body bg-info">
             <ul className='list-group'>
-              <li className='list-group-item'>{props.contact.name.first}</li>
-              <li className='list-group-item'>{props.contact.email}</li>
-              <li className='list-group-item'>{props.contact.location.country}</li>
-              <li className='list-group-item'>{props.contact.dob.date}</li>
-              <li className='list-group-item'>{props.contact.dob.age}</li>
+              <li className='list-group-item'>Name : {props.contact.name.first}</li>
+              <li className='list-group-item'>Email : {props.contact.email}</li>
+              <li className='list-group-item'>Location : {props.contact.location.country}</li>
+              <li className='list-group-item'>Data of Birth : {props.contact.dob.date}</li>
+              <li className='list-group-item'> Age : {props.contact.dob.age}</li>
             </ul>
           </div>
         </div>
