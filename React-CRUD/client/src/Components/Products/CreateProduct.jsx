@@ -62,7 +62,7 @@ const CreateProduct = () => {
                         <div className='form-group'>
                             <input type="text" name='info' placeholder='Additional Info'className='form-control' onChange={updateHandler}/>
                         </div>
-                        <input type="submit" value="Create Prduct" className='btn btn-success'  />
+                        <input type="submit" value="Create Product" className='btn btn-success'  />
                     </form>
                         </div>
                     </div>

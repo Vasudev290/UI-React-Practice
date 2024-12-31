@@ -24,7 +24,7 @@ const UpdateProduct = () => {
       setProduct(resp.data)
     })
     .catch(()=>{})
-  },[])
+  },[p_Id])
   let sumbitHandler= (event)=>{
     event.preventDefault()
     let url=`http://127.0.0.1:5000/api/products/${p_Id.id}`
@@ -76,7 +76,6 @@ const UpdateProduct = () => {
           </div>
         </div>
       </div>
-
     </div>
     </>
   )

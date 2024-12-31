@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import {Link} from 'react-router-dom'
 const Admin = () => {
 
-  let [products,setProducts]=useState([])
+  const [products,setProducts]=useState([])
 
   let getProducts= ()=>{
     Axios.get("http://127.0.0.1:5000/api/products")
@@ -56,7 +56,10 @@ const Admin = () => {
                           <td><img src={product.image} width={'70px'} alt="" /></td>
                           <td>{product.price}</td>
                           <td>{product.qty}</td>
-                          <td><Link to={`/updateProduct/${product._id}`} className='btn btn-warning mr-2'>Update</Link><button className='btn btn-danger' onClick={deleteProduct.bind(null,product._id)}>Delete</button></td>
+                          <td>
+                            <Link to={`/updateProduct/${product._id}`} className='btn btn-warning mr-2'>Update</Link>
+                            <button className='btn btn-danger' onClick={deleteProduct.bind(null,product._id)}>Delete</button>
+                          </td>
                         </tr>
                       })
                     }
