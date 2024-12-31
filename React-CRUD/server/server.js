@@ -2,11 +2,15 @@ const express = require('express');
 const app = express();
 const dotEnv = require('dotenv');
 const mongoose = require('mongoose');
+const morgan = require('morgan')
+
 // https://mongoosejs.com/docs/queries.html
 const cors = require('cors');
 
 // configure cors
 app.use(cors());
+
+app.use(morgan('tiny'))
 
 // configure dotEnv
 dotEnv.config({path : './config/config.env'});
@@ -39,5 +43,5 @@ mongoose.connect(process.env.MONGO_DB_LOCAL_URL, {
 app.use('/api', require('./router/apiRouter'));
 
 app.listen(port, hostname, () => {
-    console.log(`Express Server is Started at http://${hostname}:${port}`);
+    console.log((`Express Server is Started at http://${hostname}:${port}`));
 });

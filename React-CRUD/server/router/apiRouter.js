@@ -12,8 +12,7 @@ router.get('/products', async (request , response) => {
     try {
         let products = await Product.find();
         response.status(200).json(products);
-    }
-    catch (err) {
+    }catch (err) {
         console.error(err);
         response.status(500).json({
             msg : err.message
@@ -32,8 +31,7 @@ router.get('/products/:id', async (request , response) => {
         let productId = request.params.id;
         let product = await Product.findById(productId);
         response.status(200).json(product);
-    }
-    catch (err) {
+    }catch (err) {
         console.error(err);
         response.status(500).json({
             msg : err.message
