@@ -1,13 +1,13 @@
 import React,{useState} from 'react'
 
 const Toggle = () => {
-    const [isOne, setIsOne] = useState(true)
+    const [isOne, setIson] = useState(false)
   return (
     <div>
-        <h3>Light💡⚡⚡</h3>
-        <button onClick={() => setIsOne(!isOne)}>
+        <h3>Light💡</h3>
+        <button onClick={() => setIson(!isOne)}>
             {
-                isOne ? 'ONE' : 'OFF'
+                isOne ? 'On' : 'Off'
             }
         </button>
     </div>

@@ -2,6 +2,8 @@ import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import Count from './UseState/Count'
 import Toggle from './UseState/Toggle'
+import Form from './UseState/Form'
+import Task from './UseState/Task'
 //import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 
 const App = () => {
@@ -10,6 +12,10 @@ const App = () => {
     <Count/>
     <hr />
     <Toggle/>
+    <hr />
+    <Form/>
+    <hr />
+    <Task/>
     </div>
   
 }
