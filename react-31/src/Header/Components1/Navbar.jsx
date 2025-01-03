@@ -8,8 +8,8 @@ const Navbar = () => {
             <ul className='navbar-nav'>
                 <li><Link to='/basic' className='nav-link'>Basic</Link></li>
                 <li><Link to='/fetch' className='nav-link'>FerchData</Link></li>
-                <li><Link to='/task' className='nav-link'>Task</Link></li>
-                <li><Link to='theme' className='nav-link'>Theme</Link></li>
+                <li><Link to='/timer' className='nav-link'>Timer</Link></li>
+                <li><Link to='/count' className='nav-link'>Count</Link></li>
                 <li><Link to='/toggle' className='nav-link'>Toggle</Link></li>
                 <li><Link to='/visibile' className='nav-link'>Visible</Link></li>
                 <li><Link to='/check' className='nav-link'>Checked</Link></li>

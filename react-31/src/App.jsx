@@ -13,6 +13,8 @@ import Navbar from './Header/Components1/Navbar' //useEffect
 //import Model from './UseState/Model'
 import Basic from './UseEffect/Basic'
 import FetchData from './UseEffect/FetchData'
+import Timer from './UseEffect/Timer'
+import Dependency from './UseEffect/Dependency'
 
 
 const App = () => {
@@ -22,6 +24,8 @@ const App = () => {
       <Routes>
       <Route path='/basic' element={<Basic/>}></Route>
       <Route path='/fetch' element={<FetchData/>}></Route>
+      <Route path='/timer' element={<Timer/>}></Route>
+      <Route path='/count' element={<Dependency/>}></Route>
       
     </Routes>
     </Router>
