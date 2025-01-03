@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import FormError from './FormError'
 
 const Form = () => {
     const [name, setName] = useState('')
@@ -13,7 +14,11 @@ const Form = () => {
         </div>
         
         <p>{`Name:${name} , Age: ${age} `}</p>
+        <div>
+          <FormError/>
+        </div>
     </div>
+    
   )
 }
 
