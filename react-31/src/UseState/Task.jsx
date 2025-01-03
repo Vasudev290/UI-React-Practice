@@ -7,7 +7,7 @@ const Task = () => {
     }
   return (
     <div>
-       <button onClick={addTasks}>Add Tasks</button>
+       <button onClick={addTasks} className='btn btn-success'>Add Tasks</button>
        <ul>
         {
             tasks.map((task, index) => (

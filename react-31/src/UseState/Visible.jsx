@@ -4,7 +4,7 @@ const Visible = () => {
     const [isVisible, setIsVisible] = useState(false)
   return (
     <div>
-        <button onClick={() => setIsVisible(!isVisible)}>
+        <button onClick={() => setIsVisible(!isVisible)} className='btn btn-secondary'>
             {
                 isVisible ? 'Hide' : 'Show'
             } Paragraph

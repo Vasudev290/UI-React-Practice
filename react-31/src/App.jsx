@@ -8,6 +8,8 @@ import Form from './UseState/Form'
 import Task from './UseState/Task'
 import Theme from './UseState/Theme'
 import Visible from './UseState/Visible'
+import Check from './UseState/Check'
+import Model from './UseState/Model'
 
 
 const App = () => {
@@ -21,6 +23,8 @@ const App = () => {
       <Route path='/theme' element={<Theme/>}></Route>
       <Route path='/toggle' element={<Toggle/>}></Route>
       <Route path='/visibile' element={<Visible/>}></Route>
+      <Route path='/check' element={<Check/>}></Route>
+      <Route path='/model' element={<Model/>}></Route>
     </Routes>
     </Router>
       </div>

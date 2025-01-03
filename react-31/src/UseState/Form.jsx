@@ -5,10 +5,13 @@ const Form = () => {
     const [age, setAge] = useState(0)
   return (
     <div>
-        <label> Name == </label>
-        <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='Enter Name'/> <br /> <br />
-        <label>Age ===</label>
-        <input type="text" value={age} onChange={(e) => setAge(e.target.value)} placeholder='Enter Age'/>
+       <div className='form-group md-4'>
+       <input type="text" value={name} onChange={(e) => setName(e.target.value)} placeholder='Enter Name' className='form-control'/>
+       </div>
+        <div className='form-group'>
+        <input type="text" value={age} onChange={(e) => setAge(e.target.value)} placeholder='Enter Age' className='form-control'/>
+        </div>
+        
         <p>{`Name:${name} , Age: ${age} `}</p>
     </div>
   )

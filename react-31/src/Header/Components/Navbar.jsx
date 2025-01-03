@@ -12,6 +12,8 @@ const Navbar = () => {
                 <li><Link to='theme' className='nav-link'>Theme</Link></li>
                 <li><Link to='/toggle' className='nav-link'>Toggle</Link></li>
                 <li><Link to='/visibile' className='nav-link'>Visible</Link></li>
+                <li><Link to='/check' className='nav-link'>Checked</Link></li>
+                <li><Link to='/model' className='nav-link'>Model</Link></li>
             </ul>
         </div>
     </nav>

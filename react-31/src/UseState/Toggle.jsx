@@ -5,7 +5,7 @@ const Toggle = () => {
   return (
     <div>
         <h3>Light💡</h3>
-        <button onClick={() => setIson(!isOne)}>
+        <button onClick={() => setIson(!isOne)} className='btn btn-primary'>
             {
                 isOne ? 'On' : 'Off'
             }
