@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React, {  useState } from 'react'
 
 const Task = () => {
     const [tasks, setTasks] = useState([])
     const addTasks = () => {
-        setTasks([...tasks, `Tasks${tasks.length + 1}`])
+        setTasks([...tasks, `Tasks${tasks.length + 2}`])
     }
   return (
     <div>
@@ -20,3 +20,5 @@ const Task = () => {
 }
 
 export default Task
+
+
