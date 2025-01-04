@@ -10,7 +10,7 @@ const Navbar = () => {
                 <li><Link to='/fetch' className='nav-link'>FerchData</Link></li>
                 <li><Link to='/timer' className='nav-link'>Timer</Link></li>
                 <li><Link to='/count' className='nav-link'>Count</Link></li>
-                <li><Link to='/toggle' className='nav-link'>Toggle</Link></li>
+                <li><Link to='/table' className='nav-link'>Table</Link></li>
                 <li><Link to='/visibile' className='nav-link'>Visible</Link></li>
                 <li><Link to='/check' className='nav-link'>Checked</Link></li>
                 <li><Link to='/model' className='nav-link'>Model</Link></li>
