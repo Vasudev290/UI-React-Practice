@@ -31,8 +31,9 @@ const Table = () => {
     }
   return (
     <div className='container mt-5'>
-        <h2 className='mb-4'>Product Cards</h2>
+        <h2 className='mb-4 center'>Product Cards</h2>
         <div className="row">
+            <pre>{JSON.stringify(data)}</pre>
             {data.map((item, index) => (
                 <div className="col-md-4 mb-4" key={index}>
                     <div className="card h-100">
