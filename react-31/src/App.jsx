@@ -16,6 +16,7 @@ import FetchData from './UseEffect/FetchData'
 import Timer from './UseEffect/Timer'
 import Dependency from './UseEffect/Dependency'
 import Table from './UseEffect/Table'
+import FetchTable from './UseEffect/FetchTable'
 
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
       <Route path='/timer' element={<Timer/>}></Route>
       <Route path='/count' element={<Dependency/>}></Route>
       <Route path='/table' element={<Table/>}></Route>
+      <Route path='/fetchtable' element={<FetchTable/>}></Route>
       
     </Routes>
     </Router>
