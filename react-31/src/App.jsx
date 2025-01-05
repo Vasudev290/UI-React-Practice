@@ -17,6 +17,7 @@ import Timer from './UseEffect/Timer'
 import Dependency from './UseEffect/Dependency'
 import Table from './UseEffect/Table'
 import FetchTable from './UseEffect/FetchTable'
+import Calculate from './UseEffect/Calculate'
 
 
 const App = () => {
@@ -30,6 +31,7 @@ const App = () => {
       <Route path='/count' element={<Dependency/>}></Route>
       <Route path='/table' element={<Table/>}></Route>
       <Route path='/fetchtable' element={<FetchTable/>}></Route>
+      <Route path='/cal' element={<Calculate/>}></Route>
       
     </Routes>
     </Router>
