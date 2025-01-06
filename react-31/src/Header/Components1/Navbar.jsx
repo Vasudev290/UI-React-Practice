@@ -13,6 +13,7 @@ const Navbar = () => {
                 <li><Link to='/table' className='nav-link'>Table</Link></li>
                 <li><Link to='/fetchtable' className='nav-link'>FetchTable</Link></li>
                 <li><Link to='/cal' className='nav-link'>Calculate</Link></li>
+                <li><Link to='/propDrilling' className='nav-link'>Props Drilling</Link></li>
             </ul>
         </div>
     </nav>

@@ -18,7 +18,7 @@ import Dependency from './UseEffect/Dependency'
 import Table from './UseEffect/Table'
 import FetchTable from './UseEffect/FetchTable'
 import Calculate from './UseEffect/Calculate'
-
+import Props from './UseContext/A'
 
 const App = () => {
   return <div>
@@ -32,6 +32,7 @@ const App = () => {
       <Route path='/table' element={<Table/>}></Route>
       <Route path='/fetchtable' element={<FetchTable/>}></Route>
       <Route path='/cal' element={<Calculate/>}></Route>
+      <Route path='/propDrilling' element={<Props/>}></Route>
       
     </Routes>
     </Router>
