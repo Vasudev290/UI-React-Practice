@@ -19,6 +19,8 @@ import Table from './UseEffect/Table'
 import FetchTable from './UseEffect/FetchTable'
 import Calculate from './UseEffect/Calculate'
 import Props from './UseContext/A'
+import Provider from './UseContext/Provider'
+import Data from './UseContext/Contexts/Data'
 
 const App = () => {
   return <div>
@@ -33,6 +35,8 @@ const App = () => {
       <Route path='/fetchtable' element={<FetchTable/>}></Route>
       <Route path='/cal' element={<Calculate/>}></Route>
       <Route path='/propDrilling' element={<Props/>}></Route>
+      <Route path='/context' element={<Provider/>}></Route>
+      <Route path='/origin' element={<Data/>}></Route>
       
     </Routes>
     </Router>

@@ -14,6 +14,8 @@ const Navbar = () => {
                 <li><Link to='/fetchtable' className='nav-link'>FetchTable</Link></li>
                 <li><Link to='/cal' className='nav-link'>Calculate</Link></li>
                 <li><Link to='/propDrilling' className='nav-link'>Props Drilling</Link></li>
+                <li><Link to='/context' className='nav-link'>UseContext</Link></li>
+                <li><Link to='/origin' className='nav-link'>Origin Company</Link></li>
             </ul>
         </div>
     </nav>
