@@ -13,6 +13,9 @@ const Navbar = () => {
                 <li><Link to='/details' className='nav-link'>Details</Link></li>
                 <li><Link to='/auth' className='nav-link'>Authentication</Link></li>
                 <li><Link to='/count' className='nav-link'>Count</Link></li>
+                <li><Link to='/button' className='nav-link'>Dyanamic Provider</Link></li>
+                <li><Link to='/toggle' className='nav-link'>Toggle Theme</Link></li>
+                <li><Link to='/loginout' className='nav-link'>Login & Logout</Link></li>
             </ul>
         </div>
     </nav>

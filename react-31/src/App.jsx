@@ -26,6 +26,9 @@ import Light from './UseContext/Themes/Light'
 import Details from './UseContext/User/Details'
 import Authi from './UseContext/Auth/Authi'
 import Count from './UseContext/Counters/Count'
+import Dayanmic from './UseContext/DyanamicProvider/Dayanmic'
+import Color from './UseContext/ThemeToggles/Color'
+import Auth from './UseContext/Authentication/Auth'
 
 const App = () => {
   return <div>
@@ -39,6 +42,9 @@ const App = () => {
       <Route path='/details' element={<Details/>}></Route>
       <Route path='/auth' element={<Authi/>}></Route>
       <Route path='/count' element={<Count/>}></Route>
+      <Route path='/button' element={<Dayanmic/>}></Route>
+      <Route path='/toggle' element={<Color/>}></Route>
+      <Route path='/loginout' element={<Auth/>}></Route>
       
     </Routes>
     </Router>
