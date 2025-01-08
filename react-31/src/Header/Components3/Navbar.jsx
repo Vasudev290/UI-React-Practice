@@ -9,6 +9,7 @@ const Navbar = () => {
                 <li><Link to='/basic' className='nav-link'>Basic</Link></li>
                 <li><Link to='/focus' className='nav-link'>Form Focus</Link></li>
                 <li><Link to='/watch' className='nav-link'>Stop Watch</Link></li>
+                <li><Link to='/count' className='nav-link'>Counter</Link></li>
             </ul>
         </div>
     </nav>

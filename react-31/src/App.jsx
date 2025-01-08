@@ -33,6 +33,7 @@ import Navbar from './Header/Components3/Navbar'
 import Basic from './UseRef/Basic'
 import Focus from './UseRef/Focus'
 import StopWatch from './UseRef/StopWatch'
+import PrevState from './UseRef/PrevState'
 
 const App = () => {
   return <div>
@@ -42,6 +43,7 @@ const App = () => {
       <Route path='/basic' element={<Basic/>}></Route>
       <Route path='/focus' element={<Focus/>}></Route>
       <Route path='/watch' element={<StopWatch/>}></Route>
+      <Route path='/count' element={<PrevState/>}></Route>
     </Routes>
     </Router>
       </div>
