@@ -34,6 +34,11 @@ import Basic from './UseRef/Basic'
 import Focus from './UseRef/Focus'
 import StopWatch from './UseRef/StopWatch'
 import PrevState from './UseRef/PrevState'
+import Timer from './UseRef/Timer'
+import AnimateBox from './UseRef/AnimateBox'
+import InputField from './UseRef/InputField'
+import Task from './UseRef/Task'
+import Carousel from './UseRef/Carousel'
 
 const App = () => {
   return <div>
@@ -44,6 +49,11 @@ const App = () => {
       <Route path='/focus' element={<Focus/>}></Route>
       <Route path='/watch' element={<StopWatch/>}></Route>
       <Route path='/count' element={<PrevState/>}></Route>
+      <Route path='/timer' element={<Timer/>}></Route>
+      <Route path='/animate' element={<AnimateBox/>}></Route>
+      <Route path='/input' element={<InputField/>}></Route>
+      <Route path='/task' element={<Task/>}></Route>
+      <Route path='/care' element={<Carousel/>}></Route>
     </Routes>
     </Router>
       </div>
