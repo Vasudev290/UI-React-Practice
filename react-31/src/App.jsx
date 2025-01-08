@@ -3,7 +3,8 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 //useState import Navbar from './Header/Components/Navbar'
 //import Navbar from './Header/Components1/Navbar' //useEffect
-import Navbar from './Header/Components2/Navbar'
+//import Navbar from './Header/Components2/Navbar'  //useContext
+import Navbar from './Header/Components3/Navbar'
 //import Count from './UseState/Count'
 //import Toggle from './UseState/Toggle'
 //import Form from './UseState/Form'
@@ -19,33 +20,28 @@ import Navbar from './Header/Components2/Navbar'
 // import Table from './UseEffect/Table'
 // import FetchTable from './UseEffect/FetchTable'
 // import Calculate from './UseEffect/Calculate'
-import Props from './UseContext/A'
-import Provider from './UseContext/Provider'
-import Data from './UseContext/Contexts/Data'
-import Light from './UseContext/Themes/Light'
-import Details from './UseContext/User/Details'
-import Authi from './UseContext/Auth/Authi'
-import Count from './UseContext/Counters/Count'
-import Dayanmic from './UseContext/DyanamicProvider/Dayanmic'
-import Color from './UseContext/ThemeToggles/Color'
-import Auth from './UseContext/Authentication/Auth'
+// import Props from './UseContext/A'
+// import Provider from './UseContext/Provider'
+// import Data from './UseContext/Contexts/Data'
+// import Light from './UseContext/Themes/Light'
+// import Details from './UseContext/User/Details'
+// import Authi from './UseContext/Auth/Authi'
+// import Count from './UseContext/Counters/Count'
+// import Dayanmic from './UseContext/DyanamicProvider/Dayanmic'
+// import Color from './UseContext/ThemeToggles/Color'
+// import Auth from './UseContext/Authentication/Auth'
+import Basic from './UseRef/Basic'
+import Focus from './UseRef/Focus'
+import StopWatch from './UseRef/StopWatch'
 
 const App = () => {
   return <div>
     <Router>
       <Navbar/>
       <Routes>
-      <Route path='/propDrilling' element={<Props/>}></Route>
-      <Route path='/context' element={<Provider/>}></Route>
-      <Route path='/origin' element={<Data/>}></Route>
-      <Route path='/theme' element={<Light/>}></Route>
-      <Route path='/details' element={<Details/>}></Route>
-      <Route path='/auth' element={<Authi/>}></Route>
-      <Route path='/count' element={<Count/>}></Route>
-      <Route path='/button' element={<Dayanmic/>}></Route>
-      <Route path='/toggle' element={<Color/>}></Route>
-      <Route path='/loginout' element={<Auth/>}></Route>
-      
+      <Route path='/basic' element={<Basic/>}></Route>
+      <Route path='/focus' element={<Focus/>}></Route>
+      <Route path='/watch' element={<StopWatch/>}></Route>
     </Routes>
     </Router>
       </div>
