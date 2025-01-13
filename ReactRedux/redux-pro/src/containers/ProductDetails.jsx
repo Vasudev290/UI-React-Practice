@@ -20,7 +20,7 @@ const ProductDetails = () => {
     useEffect(() => {
       if(productId && productId !== "")  fetchProductDetails();
       return () => {dispatch(removeSelectedProduct())}
-    }, [fetchProductDetails])
+    }, [])
       return (
         <div className="ui grid container">
         {Object.keys(product).length === 0 ? (
