@@ -1,0 +1,35 @@
+/* Wrapper for the entire product grid */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Four columns in a row */
+    gap: 16px; /* Space between items */
+    padding: 20px; /* Padding around the grid */
+  }
+  
+  /* Styling individual card containers */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  
+  /* Styling for the card (optional for uniformity) */
+  .ui.card {
+    width: 100%; /* Ensures the card fits within the column */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .ui.card .image img {
+    object-fit: contain;
+    width: 100%; /* Image fits within the card */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .ui.card .content {
+    padding: 10px;
+    text-align: center;
+  }
+  
