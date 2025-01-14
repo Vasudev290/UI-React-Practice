@@ -1,15 +1,19 @@
 import React,{useState} from 'react'
+import {useDispatch} from 'react-redux'
 import NewCommects from './NewCommects'
 import NewUser from './NewUser'
 import UserForm from './UserForm'
 import CommentForm from './CommentForm'
+import {increament} from '../reduxToolkit/CreateSlices/counterSlice'
 
 const PostDisplay = () => {
     const [showUser, setShowUser] = useState(false)
     const [showCommect, setShowCommect] = useState(false)
 
-    const likeHandler = () => {
+    const dispatch = useDispatch()
 
+    const likeHandler = () => {
+        dispatch(increament())
     }
     const userHandler =() => {
         setShowUser(true)
