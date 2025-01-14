@@ -1,14 +1,20 @@
 import React,{useState} from 'react'
-
+import { useDispatch } from 'react-redux'
+import { addUser } from '../reduxToolkit/UserSlices/userSlice'
 const UserForm = () => {
     const [username, setUsername] = useState('')
-    const userNameHandler =(e)=>{
-        setUsername(e.target.value)
-    }
+    const dispatch = useDispatch()
 
+const userNameHandler =(e)=>{
+        setUsername(e.target.value)
+}
 const submitHandler =(e)=>{
     e.preventDefault()
+    dispatch(addUser(username))
+    setUsername("")
+    console.log("This is UserName :", username)
 }
+
   return (
     <div >
         <form className='formSection' onSubmit={submitHandler}>
