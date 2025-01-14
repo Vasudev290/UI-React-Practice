@@ -1,7 +1,9 @@
 import React,{useState} from 'react'
-
+import { useDispatch } from 'react-redux'
+import {addComments} from '../reduxToolkit/CommentsSlices/commentsSlice'
 const CommentForm = () => {
     const [userCommect, setUserCommect] = useState('')
+    const dispatch = useDispatch()
 
     const commectHadler = (e) => {
         setUserCommect(e.target.value)
@@ -9,6 +11,7 @@ const CommentForm = () => {
 
     const submitHandler = (e) => {
         e.preventDefault();
+        dispatch(addComments(userCommect))
         console.log("New Commects: ", userCommect)
         setUserCommect("")
     }
