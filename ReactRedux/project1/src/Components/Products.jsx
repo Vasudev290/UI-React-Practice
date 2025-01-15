@@ -1,7 +1,11 @@
 import React,{useEffect, useState} from 'react'
+import { useDispatch } from 'react-redux'
+import {countCart, removeCart} from '../Reducers/cartReducer.js'
 const Products = () => {
     const [products, setProducts] = useState([])
+    const dispatch = useDispatch()
     console.log(products)
+
     const fetchData = async () => {
         try{
             const response = await fetch("https://fakestoreapi.com/products")
@@ -14,6 +18,7 @@ const Products = () => {
     useEffect(() => {
         fetchData()
     }, [])
+
   return (
     <div>
         <div className="container mt-3">
@@ -34,8 +39,16 @@ const Products = () => {
                         </h6>
                         <p className="card-text">${product.price.toFixed(2)}</p>
                         <div className="mt-auto">
-                          <button className="btn btn-primary btn-sm me-2">Add</button>
-                          <button className="btn btn-danger btn-sm m-2">Remove</button>
+                          <button className="btn btn-primary btn-sm me-2"
+                          onClick={() => dispatch(countCart({
+                            productName: product.title,
+                            productPrice: product.price
+                          }))}>Add</button>
+                          <button className="btn btn-danger btn-sm m-2" 
+                          onClick={() => dispatch(removeCart({
+                            productName: product.title,
+                            productPrice: product.price
+                          }))}>Remove</button>
                         </div>
                       </div>
                     </div>
