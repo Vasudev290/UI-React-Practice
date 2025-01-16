@@ -2,7 +2,7 @@ import React from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 import { deleteUsers } from '../Redux/Slices/userSlice'
 const User = () => {
-  const users = useSelector((state) =>state.userInfo.usesrData)
+  const users = useSelector((state) =>state.userInfo.userData)
   console.log(users)
   const dispatch = useDispatch()
   const deleteUsersInfo = (index) => {
@@ -35,9 +35,9 @@ const User = () => {
                     <td>{data.email}</td>
                     <td>{data.contact}</td>
                     <td>{data.location}</td>
-                    <button onClick={() => deleteUsersInfo(index)} className='btn btn-danger'>Delete</button>
+                  <td><button onClick={() => deleteUsersInfo(index)} className='btn btn-danger'>Delete</button></td>  
                   </tr>
-                })}
+                  })}
               </tbody>
             </table>
           </div>
