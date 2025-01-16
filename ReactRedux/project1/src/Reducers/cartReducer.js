@@ -17,7 +17,7 @@ export const cartReducer = createSlice({
                 state.cartValue.splice(index, 1)
             }
             const priceArray = state.cartValue.map(obj => obj.productPrice)
-            state.totalPrice = priceArray.reduce((a,b) => a+b)
+            state.totalPrice = priceArray.reduce((a,b) => a+b, 0)
         }
     }
 
