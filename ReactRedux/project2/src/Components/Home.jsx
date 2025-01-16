@@ -1,6 +1,22 @@
-import React from 'react'
-
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux';
+import {addUsers} from '../Redux/Slices/userSlice.js'
 const Home = () => {
+    const [formInput, setFormInput] = useState({name:"", age:"", email:"", contact:"", location:""})
+    const dispatch = useDispatch()
+    
+    const dataHandler = (event) => {
+        setFormInput({...formInput, [event.target.name]: event.target.value});
+    };
+    const formSumbitHandler = (e) => {
+        e.preventDefault();
+        alert("User Application Submited Successfully..!")
+        console.log(formInput)
+    }
+    const addUser = () => {
+        dispatch(addUsers(formInput))
+    } 
+
   return (
     <div>
         <h1>Home Page</h1>
@@ -13,23 +29,23 @@ const Home = () => {
                             <h3>User Form Details</h3>
                         </div>
                         <div className="card-body bg-dark">
-                            <form>
+                            <form onSubmit={formSumbitHandler}>
                                 <div className='form-group'>
-                                <input type="text" placeholder='Name' className='form-control' />
+                                <input type="text" placeholder='Name' value={formInput.name} name='name' onChange={dataHandler} className='form-control' />
                                 </div>
                                 <div className='form-group'>
-                                <input type="number" placeholder='Age' className='form-control' />
+                                <input type="number" placeholder='Age' value={formInput.age} name='age' onChange={dataHandler} className='form-control' />
                                 </div>
                                 <div className='form-group'>
-                                <input type="email" placeholder='Email' className='form-control' />
+                                <input type="email" placeholder='Email' value={formInput.email} name='email' onChange={dataHandler} className='form-control' />
                                 </div>
                                 <div className='form-group'>
-                                <input type="number" placeholder='Contact' className='form-control' />
+                                <input type="number" placeholder='Contact' value={formInput.contact} name='contact'  onChange={dataHandler}className='form-control' />
                                 </div>
                                 <div className='form-group'>
-                                <input type="text" placeholder='Location' className='form-control' />
+                                <input type="text" placeholder='Location' value={formInput.location} name='location' onChange={dataHandler} className='form-control' />
                                 </div>
-                                <input type="submit" value="Add" className='btn btn-primary' />
+                                <input type="submit" value="Add" onClick={addUser} className='btn btn-primary' />
                             </form>
                         </div>
                     </div>
