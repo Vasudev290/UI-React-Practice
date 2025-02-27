@@ -1,13 +1,11 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 
 const UseStateBoolean = () => {
-    const [isLogin, setIsLoged] = useState(false)
+  const [isLoged, setIsLogged] = useState(false)
   return (
     <div>
-        <h2>{isLogin ? "Welcome, Vasu" : "Please login"}</h2>
-        <button onClick={() => setIsLoged(!isLogin)}>
-            {isLogin ? "Logout" : "Login"}
-        </button>
+      <h2>{isLoged ? "Welcome, Vasu!" : "Please Login"}</h2>
+      <button onClick={() => setIsLogged(!isLoged)}>{isLoged ? "Logout" : "Login"}</button>
     </div>
   )
 }

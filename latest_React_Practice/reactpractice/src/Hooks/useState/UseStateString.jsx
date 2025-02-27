@@ -10,7 +10,7 @@ const UseStateString = () => {
   return (
     <div>
         <h3>Task-1 Genarate Random Names</h3>
-        <h1>The God Name is &rarr; {name}</h1>
+        <h1>The Name is &rarr; {name}</h1>
         <button onClick={genarateRandomName}>Change Names</button>
     </div>
   )
