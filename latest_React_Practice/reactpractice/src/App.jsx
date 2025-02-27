@@ -1,9 +1,16 @@
 import React from 'react'
+import UseStateString from './Hooks/useState/UseStateString'
+import UseStateNumber from './Hooks/useState/UseStateNumber'
+import UseStateBoolean from './Hooks/useState/UseStateBoolean'
 
 const App = () => {
   return (
     <div>
-      <h2>Hello React!</h2>
+      <UseStateString/>
+      <hr />
+      <UseStateNumber/>
+      <hr />
+      <UseStateBoolean/>
     </div>
   )
 }

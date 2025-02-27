@@ -1,0 +1,11 @@
+1. What is useState Hook?
+The useState hook is one of the most commonly used hooks in React. 
+It allows functional components to have state, which was previously only possible with class components.
+
+2. Why Use useState?
+Before React Hooks, state management was only possible in class-based components using this.state and setState(). 
+The useState hook provides an easier and more efficient way to manage state in functional components.
+
+
+The syntax:
+const [state, setState] = useState(initialValue);
