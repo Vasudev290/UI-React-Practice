@@ -7,6 +7,8 @@ import UseStateArray from './Hooks/useState/UseStateArray'
 import UseStateJson from './Hooks/useState/UseStateJson'
 import UseStateForm from './Hooks/useState/UseStateForm'
 import UseStateCount from './Hooks/useState/UseStateCount'
+import UseStateFetch from './Hooks/useState/UseStateFetch'
+import UseStateTimer from './Hooks/useState/UseStateTimer'
 
 const App = () => {
   return (
@@ -26,6 +28,10 @@ const App = () => {
       <UseStateForm/>
       <hr />
       <UseStateCount/>
+      <hr />
+      <UseStateFetch/>
+      <hr />
+      <UseStateTimer/>
     </div>
   )
 }
