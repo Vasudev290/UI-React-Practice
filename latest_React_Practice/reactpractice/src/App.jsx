@@ -11,12 +11,21 @@ import React from 'react'
 // import UseStateTimer from './Hooks/useState/UseStateTimer'
 import UseEffectExampe from './Hooks/useEffect/UseEffectExampe'
 import UseEffectApi from './Hooks/useEffect/UseEffectApi'
+import UseEffectMulti from './Hooks/useEffect/UseEffectMulti'
+import UseEffectString from './Hooks/useEffect/UseEffectString'
+import UseEffectTimes from './Hooks/useEffect/UseEffectTimes'
 const App = () => {
   return (
     <div>
     <UseEffectExampe/>
     <hr />
     <UseEffectApi/>
+    <hr />
+    <UseEffectMulti/>
+    <hr />
+    <UseEffectString/>
+    <hr />
+    <UseEffectTimes/>
     </div>
   )
 }
