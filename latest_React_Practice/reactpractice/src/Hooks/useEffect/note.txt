@@ -1,0 +1,24 @@
+1. What is useEffect?
+useEffect is a React Hook that allows you to perform side effects in functional components. Side effects include:
+✅ Fetching data from an API
+✅ Updating the DOM
+✅ Subscribing/unsubscribing to events
+✅ Handling timers and intervals
+
+2. Why Use useEffect?
+Before React Hooks, we handled side effects in class components using lifecycle methods:
+
+componentDidMount → Runs once when the component mounts.
+componentDidUpdate → Runs after every update.
+componentWillUnmount → Runs before the component unmounts.
+
+useEffect combines all of these functionalities into a single function inside functional components.
+
+
+useEffect Syntax;
+useEffect(() => {
+  // Side effect logic here
+}, [dependencies]); 
+
+*The callback function runs when the component mounts or when dependencies change.
+*The dependencies array controls how often the effect runs.
