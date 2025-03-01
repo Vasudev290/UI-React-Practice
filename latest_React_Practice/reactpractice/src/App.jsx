@@ -4,6 +4,9 @@ import Provider from './Hooks/useContext/useContextEx/Provider'
 import Parent from './Hooks/useContext/useContextEx1/Parent'
 import CompA from './Hooks/useContext/useContextString/CompA'
 import JsonUser from './Hooks/useContext/useContextJSON/JsonUser'
+import ThemeProvider from './Hooks/useContext/useContextToggle/ThemeProvider'
+import AuthProvider from './Hooks/useContext/useContextAuth/AuthProvider'
+import CountProvider from './Hooks/useContext/useContextCounter/CountProvider'
 // import UseStateString from './Hooks/useState/UseStateString'
 // import UseStateNumber from './Hooks/useState/UseStateNumber'
 // import UseStateBoolean from './Hooks/useState/UseStateBoolean'
@@ -30,6 +33,12 @@ const App = () => {
       <CompA/>
       <hr />
       <JsonUser/>
+      <hr />
+      <ThemeProvider/>
+      <hr />
+      <AuthProvider/>
+      <hr />
+      <CountProvider/>
     </div>
   )
 }
