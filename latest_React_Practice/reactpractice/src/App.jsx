@@ -1,6 +1,9 @@
 import React from 'react'
 import UseRefCountEx from './Hooks/useRef/UseRefCountEx'
 import UseRefInput from './Hooks/useRef/UseRefInput'
+import UseRefStateRef from './Hooks/useRef/UseRefStateRef'
+import UseRefStateEffect from './Hooks/useRef/UseRefStateEffect'
+import UseRefStopWatch from './Hooks/useRef/UseRefStopWatch'
 //import CompA from './Hooks/useContext/PropsDrillingEx/CompA'
 // import Provider from './Hooks/useContext/useContextEx/Provider'
 // import Parent from './Hooks/useContext/useContextEx1/Parent'
@@ -30,6 +33,12 @@ const App = () => {
      <UseRefCountEx/>
      <hr />
      <UseRefInput/>
+     <hr />
+     <UseRefStateRef/>
+     <hr />
+     <UseRefStateEffect/>
+     <hr />
+     <UseRefStopWatch/>
     </div>
   )
 }
