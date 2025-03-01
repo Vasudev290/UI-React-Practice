@@ -1,0 +1,32 @@
+1️⃣ Understanding Props in React ;
+What are Props?
+Props (short for "properties") are used to pass data from one component to another in React.
+Props are read-only and immutable (cannot be modified inside the receiving component).
+Why Use Props?
+✅ Helps in reusing components.
+✅ Allows data flow from parent to child components.
+✅ Used for customization of child components.
+
+
+2️⃣ What is Props Drilling?
+Problem with Passing Props
+✅ Props work well in small applications.
+❌ In a large React app, passing props through multiple nested components becomes a problem (called "props drilling").
+
+🛠 Problem with this Approach:
+
+*The name prop is unnecessarily passed from App → Parent → Child → GrandChild.
+*If more components are added, prop drilling gets worse.
+
+
+3️⃣ How to Solve Props Drilling?
+Methods to Solve Props Drilling
+✅ Context API (useContext) → Best for simple state management.
+✅ Redux → Best for global state management in large applications.
+
+
+4️⃣ What is Context API in React?
+🔹 Context API = "Global State for Components"
+✅ Avoids props drilling by allowing direct state access.
+✅ Provides a centralized state that any component can access.
+✅ Works like a mini Redux store, but is simpler.
