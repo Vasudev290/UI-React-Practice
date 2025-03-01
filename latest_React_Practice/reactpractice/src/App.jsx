@@ -1,6 +1,9 @@
 import React from 'react'
-import CompA from './Hooks/useContext/PropsDrillingEx/CompA'
+//import CompA from './Hooks/useContext/PropsDrillingEx/CompA'
 import Provider from './Hooks/useContext/useContextEx/Provider'
+import Parent from './Hooks/useContext/useContextEx1/Parent'
+import CompA from './Hooks/useContext/useContextString/CompA'
+import JsonUser from './Hooks/useContext/useContextJSON/JsonUser'
 // import UseStateString from './Hooks/useState/UseStateString'
 // import UseStateNumber from './Hooks/useState/UseStateNumber'
 // import UseStateBoolean from './Hooks/useState/UseStateBoolean'
@@ -19,9 +22,14 @@ import Provider from './Hooks/useContext/useContextEx/Provider'
 const App = () => {
   return (
     <div>
+      {/* <CompA/> */}
+      <Provider/>
+      <hr/>
+      <Parent/>
+      <hr />
       <CompA/>
       <hr />
-      <Provider/>
+      <JsonUser/>
     </div>
   )
 }
