@@ -1,5 +1,6 @@
 import React from 'react'
 import UseRefCountEx from './Hooks/useRef/UseRefCountEx'
+import UseRefInput from './Hooks/useRef/UseRefInput'
 //import CompA from './Hooks/useContext/PropsDrillingEx/CompA'
 // import Provider from './Hooks/useContext/useContextEx/Provider'
 // import Parent from './Hooks/useContext/useContextEx1/Parent'
@@ -27,6 +28,8 @@ const App = () => {
   return (
     <div>
      <UseRefCountEx/>
+     <hr />
+     <UseRefInput/>
     </div>
   )
 }
