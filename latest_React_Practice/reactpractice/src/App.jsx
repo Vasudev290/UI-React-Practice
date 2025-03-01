@@ -1,5 +1,6 @@
 import React from 'react'
 import CompA from './Hooks/useContext/PropsDrillingEx/CompA'
+import Provider from './Hooks/useContext/useContextEx/Provider'
 // import UseStateString from './Hooks/useState/UseStateString'
 // import UseStateNumber from './Hooks/useState/UseStateNumber'
 // import UseStateBoolean from './Hooks/useState/UseStateBoolean'
@@ -19,6 +20,8 @@ const App = () => {
   return (
     <div>
       <CompA/>
+      <hr />
+      <Provider/>
     </div>
   )
 }
