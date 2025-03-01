@@ -1,0 +1,19 @@
+📌 1. What is useRef?
+useRef is a React Hook that creates a mutable object (ref) which persists across renders without causing a re-render.
+It returns an object: { current: initialValue } where current holds the current value.
+
+const ref = useRef(initialValue);
+console.log(ref.current); // Accessing the current value
+
+📌 2. Why Use useRef?
+✅ Avoid unnecessary re-renders (unlike useState).
+✅ Access and modify DOM elements directly.
+✅ Store previous values without triggering re-rendering.
+
+
+📌 3. When to Use useRef?
+🔹 When storing values that should not trigger re-renders.
+🔹 When accessing and modifying DOM elements directly.
+🔹 When keeping a reference to previous values (e.g., previous state).
+🔹 When handling timers and intervals (like stopwatches).
+

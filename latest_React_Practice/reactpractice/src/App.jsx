@@ -1,12 +1,13 @@
 import React from 'react'
+import UseRefCountEx from './Hooks/useRef/UseRefCountEx'
 //import CompA from './Hooks/useContext/PropsDrillingEx/CompA'
-import Provider from './Hooks/useContext/useContextEx/Provider'
-import Parent from './Hooks/useContext/useContextEx1/Parent'
-import CompA from './Hooks/useContext/useContextString/CompA'
-import JsonUser from './Hooks/useContext/useContextJSON/JsonUser'
-import ThemeProvider from './Hooks/useContext/useContextToggle/ThemeProvider'
-import AuthProvider from './Hooks/useContext/useContextAuth/AuthProvider'
-import CountProvider from './Hooks/useContext/useContextCounter/CountProvider'
+// import Provider from './Hooks/useContext/useContextEx/Provider'
+// import Parent from './Hooks/useContext/useContextEx1/Parent'
+// import CompA from './Hooks/useContext/useContextString/CompA'
+// import JsonUser from './Hooks/useContext/useContextJSON/JsonUser'
+// import ThemeProvider from './Hooks/useContext/useContextToggle/ThemeProvider'
+// import AuthProvider from './Hooks/useContext/useContextAuth/AuthProvider'
+// import CountProvider from './Hooks/useContext/useContextCounter/CountProvider'
 // import UseStateString from './Hooks/useState/UseStateString'
 // import UseStateNumber from './Hooks/useState/UseStateNumber'
 // import UseStateBoolean from './Hooks/useState/UseStateBoolean'
@@ -25,20 +26,7 @@ import CountProvider from './Hooks/useContext/useContextCounter/CountProvider'
 const App = () => {
   return (
     <div>
-      {/* <CompA/> */}
-      <Provider/>
-      <hr/>
-      <Parent/>
-      <hr />
-      <CompA/>
-      <hr />
-      <JsonUser/>
-      <hr />
-      <ThemeProvider/>
-      <hr />
-      <AuthProvider/>
-      <hr />
-      <CountProvider/>
+     <UseRefCountEx/>
     </div>
   )
 }
