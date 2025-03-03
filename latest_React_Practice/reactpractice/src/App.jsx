@@ -4,6 +4,7 @@ import UseRefInput from './Hooks/useRef/UseRefInput'
 import UseRefStateRef from './Hooks/useRef/UseRefStateRef'
 import UseRefStateEffect from './Hooks/useRef/UseRefStateEffect'
 import UseRefStopWatch from './Hooks/useRef/UseRefStopWatch'
+import UseStateEffectRefContext from './Hooks/UseStateEffectRefContext'
 //import CompA from './Hooks/useContext/PropsDrillingEx/CompA'
 // import Provider from './Hooks/useContext/useContextEx/Provider'
 // import Parent from './Hooks/useContext/useContextEx1/Parent'
@@ -39,6 +40,8 @@ const App = () => {
      <UseRefStateEffect/>
      <hr />
      <UseRefStopWatch/>
+     <hr />
+     <UseStateEffectRefContext/>
     </div>
   )
 }
