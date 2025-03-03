@@ -1,33 +1,33 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState } from 'react'
 
 const UseRefStopWatch = () => {
-  const [time, setTime] = useState(0);
-  const timrRef = useRef(0);
+  const [time, setTime] = useState(0)
+  const timeRef = useRef()
 
-  const startTimer = () => {
-    if (!timrRef.current) {
-      timrRef.current = setInterval(() => {
-        setTime((prev) => prev + 1);
+  const startHandler = () => {
+    if(!timeRef.current){
+      timeRef.current = setInterval(() => {
+        setTime((prev) => prev + 1)
       }, 1000);
     }
-  };
-  const resatrtTimer = () => {
-    stopTimer();
-    setTime(0);
-  };
-  const stopTimer = () => {
-    clearInterval(timrRef.current);
-    timrRef.current = null;
-  };
+  }
+  const restartHandler = () => {
+    setTime(0)
+    stopHandler()
+  }
+  const stopHandler = () => {
+    clearInterval(timeRef.current)
+    timeRef.current = null
+  }
   return (
     <div>
-      <h1>Stop Watch</h1>
-      <h2>Time {time}s</h2>
-      <button onClick={startTimer}>Start</button>
-      <button onClick={resatrtTimer}>Restart</button>
-      <button onClick={stopTimer}>Stop</button>
+      <h2>Stop Watch</h2>
+      <h1>Timer : {time}s</h1>
+      <button onClick={startHandler}>Start</button>
+      <button onClick={restartHandler}>Restart</button>
+      <button onClick={stopHandler}>Stop</button>
     </div>
-  );
-};
+  )
+}
 
-export default UseRefStopWatch;
+export default UseRefStopWatch
