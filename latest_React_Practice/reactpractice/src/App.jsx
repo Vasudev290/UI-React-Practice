@@ -1,11 +1,12 @@
 import React from 'react'
-import UseRefCountEx from './Hooks/useRef/UseRefCountEx'
-import UseRefInput from './Hooks/useRef/UseRefInput'
-import UseRefStateRef from './Hooks/useRef/UseRefStateRef'
-import UseRefStateEffect from './Hooks/useRef/UseRefStateEffect'
-import UseRefStopWatch from './Hooks/useRef/UseRefStopWatch'
-import UseStateEffectRefContext from './Hooks/UseStateEffectRefContext'
-//import CompA from './Hooks/useContext/PropsDrillingEx/CompA'
+import PropsEx1 from './Hooks/useContext/PropsExample/PropsEx1'
+// import UseRefCountEx from './Hooks/useRef/UseRefCountEx'
+// import UseRefInput from './Hooks/useRef/UseRefInput'
+// import UseRefStateRef from './Hooks/useRef/UseRefStateRef'
+// import UseRefStateEffect from './Hooks/useRef/UseRefStateEffect'
+// import UseRefStopWatch from './Hooks/useRef/UseRefStopWatch'
+// import UseStateEffectRefContext from './Hooks/UseStateEffectRefContext'
+// import CompA from './Hooks/useContext/PropsDrillingEx/CompA'
 // import Provider from './Hooks/useContext/useContextEx/Provider'
 // import Parent from './Hooks/useContext/useContextEx1/Parent'
 // import CompA from './Hooks/useContext/useContextString/CompA'
@@ -31,17 +32,7 @@ import UseStateEffectRefContext from './Hooks/UseStateEffectRefContext'
 const App = () => {
   return (
     <div>
-     <UseRefCountEx/>
-     <hr />
-     <UseRefInput/>
-     <hr />
-     <UseRefStateRef/>
-     <hr />
-     <UseRefStateEffect/>
-     <hr />
-     <UseRefStopWatch/>
-     <hr />
-     <UseStateEffectRefContext/>
+     <PropsEx1/>
     </div>
   )
 }
