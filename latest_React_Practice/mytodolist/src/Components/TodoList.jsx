@@ -2,51 +2,42 @@ import React, { useRef, useState } from "react";
 import TodoItem from "./TodoItem";
 
 const TodoList = () => {
-  const [todoList, setTodoList] = useState([
-    {
-      id: 101,
-      text: "Read Books",
-      isCompleted: true,
-    },
-    {
-      id: 102,
-      text: "Watching Cricket",
-      isCompleted: true,
-    },
-    {
-      id: 103,
-      text: "Learning React JS ",
-      isCompleted: false,
-    },
-  ]);
-  const inputRef = useRef()
+  const [todoList, setTodoList] = useState([]);
+  const inputRef = useRef();
 
   //Adding the New Task
   const addTasksHandler = () => {
     const inputText = inputRef.current.value.trim();
-    if(inputText === ""){
-      return null
+    if (inputText === "") {
+      return null;
     }
     const newTodo = {
       id: Date.now(),
       text: inputText,
-      isCompleted : false
+      isCompleted: false,
     };
     setTodoList((prevItem) => [...prevItem, newTodo]);
     inputRef.current.value = "";
   };
 
-  //Update task Status 
-  const toggleTask = () => {
+  //Update task Status
+  const toggleTask = (id) => {
     setTodoList((prevId) => {
-      return prevId.map((todo)=> {
-        if(id === todo.id){
-          return {...todo, isCompleted: !todo.isCompleted};
+      return prevId.map((todo) => {
+        if (id === todo.id) {
+          return { ...todo, isCompleted: !todo.isCompleted };
         }
-        return todo
-      })
-    })
-  }
+        return todo;
+      });
+    });
+  };
+
+  //Delete Todo Task
+  const deleteTaskHandler = (id) => {
+    setTodoList((prevItem) => {
+      return prevItem.filter((todo) => todo.id !== id);
+    });
+  };
   return (
     <>
       <div className="w-[30-rem]">
@@ -54,13 +45,16 @@ const TodoList = () => {
         <div className="flex gap-2">
           <div className="flex-1">
             <input
-            ref={inputRef}
+              ref={inputRef}
               type="text"
               placeholder="Add Your Task"
               className="py-3 px-4 w-full text-sm border focus:outline-none focus:border-amber-400"
             />
           </div>
-          <button className="py-3 px-4 bg-blue-500 text-white hover:bg-blue-700 rounded-md text-sm font-medium" onClick={addTasksHandler}>
+          <button
+            className="py-3 px-4 bg-blue-500 text-white hover:bg-blue-700 rounded-md text-sm font-medium"
+            onClick={addTasksHandler}
+          >
             Add Task
           </button>
         </div>
@@ -82,7 +76,8 @@ const TodoList = () => {
                   key={index}
                   isCompleted={todo.isCompleted}
                   id={todo.id}
-                  toggleTask = {toggleTask}
+                  toggleTask={toggleTask}
+                  deleteTodo={deleteTaskHandler}
                 />
               );
             })

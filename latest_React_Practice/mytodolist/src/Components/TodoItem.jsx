@@ -1,17 +1,21 @@
 import React from "react";
 
-const TodoItem = ({ text, isCompleted, id, toggleTask  }) => {
+const TodoItem = ({ text, isCompleted, id, toggleTask, deleteTodo }) => {
   return (
     <div className="flex justify-between items-center gap-2">
       <label
         className={`hover:bg-slate-100 flex-1 p-2 rounded-md cursor-pointer select-none ${
           isCompleted ? "line-through text-slate-500" : ""
-        }`} onClick={() => toggleTask(id)}
+        }`}
+        onClick={() => toggleTask(id)}
       >
         {text}
       </label>
       <div>
-        <div className="size-[26px] p-1 rounded-md">
+        <div
+          className="size-[26px] p-1 rounded-md"
+          onClick={() => deleteTodo(id)}
+        >
           <svg
             className="hover: fill-red-700"
             xmlns="http://www.w3.org/2000/svg"
