@@ -1,9 +1,13 @@
 import React from "react";
 
-const TodoItem = ({ text }) => {
+const TodoItem = ({ text, isCompleted, id, toggleTask  }) => {
   return (
     <div className="flex justify-between items-center gap-2">
-      <label className="hover:bg-slate-100 flex-1 p-2 rounded-md cursor-pointer select-none">
+      <label
+        className={`hover:bg-slate-100 flex-1 p-2 rounded-md cursor-pointer select-none ${
+          isCompleted ? "line-through text-slate-500" : ""
+        }`} onClick={() => toggleTask(id)}
+      >
         {text}
       </label>
       <div>
