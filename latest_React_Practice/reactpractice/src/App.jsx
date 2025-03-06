@@ -1,5 +1,5 @@
 import React from 'react'
-import PropsEx1 from './Hooks/useContext/PropsExample/PropsEx1'
+// import PropsEx1 from './Hooks/useContext/PropsExample/PropsEx1'
 // import UseRefCountEx from './Hooks/useRef/UseRefCountEx'
 // import UseRefInput from './Hooks/useRef/UseRefInput'
 // import UseRefStateRef from './Hooks/useRef/UseRefStateRef'
@@ -32,7 +32,7 @@ import PropsEx1 from './Hooks/useContext/PropsExample/PropsEx1'
 const App = () => {
   return (
     <div>
-     <PropsEx1/>
+      <h2>App Component</h2>
     </div>
   )
 }
