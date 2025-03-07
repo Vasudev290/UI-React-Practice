@@ -12,7 +12,14 @@ const User = () => {
   return (
     <div>
       <h2>User Details</h2>
-      <Details props={userData} />
+      {JSON.stringify(userData)}
+      <Details
+        name={userData.name}
+        age={userData.age}
+        email={userData.email}
+        loc={userData.loc}
+        country={userData.country}
+      />
     </div>
   );
 };

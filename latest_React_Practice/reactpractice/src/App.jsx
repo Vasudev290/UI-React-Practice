@@ -1,5 +1,6 @@
 import React from 'react'
 import User from './Hooks/useContext/Props/User'
+import ApiData from './Hooks/useContext/Props/ApiProps/ApiData'
 // import PropsEx1 from './Hooks/useContext/PropsExample/PropsEx1'
 // import UseRefCountEx from './Hooks/useRef/UseRefCountEx'
 // import UseRefInput from './Hooks/useRef/UseRefInput'
@@ -35,6 +36,8 @@ const App = () => {
     <div>
       <h2>App Component</h2>
       <User/>
+      <hr />
+      <ApiData/>
     </div>
   )
 }
