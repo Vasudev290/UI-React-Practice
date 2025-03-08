@@ -34,9 +34,10 @@
 
 import Counter from "./Hooks/useState/UseStateTasks/Counter"
 import InputField from "./Hooks/useState/UseStateTasks/InputField"
+import MiniToDoList from "./Hooks/useState/UseStateTasks/MiniToDoList"
 import ToggleText from "./Hooks/useState/UseStateTasks/ToggleText"
-
-// import UseEffectTimes from './Hooks/useEffect/UseEffectTimes'
+import Theme from "./Hooks//useState//UseStateTasks//Theme"
+import FormValidation from "./Hooks//useState//UseStateTasks/FormValidation";
 const App = () => {
   return (
     <div>
@@ -47,6 +48,12 @@ const App = () => {
       <ToggleText/>
       <hr />
       <InputField/>
+      <hr />
+      <MiniToDoList/>
+      <hr />
+      <Theme/>
+      <hr />
+      <FormValidation />
     </div>
   )
 }
