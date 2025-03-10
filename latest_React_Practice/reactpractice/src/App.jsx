@@ -31,29 +31,22 @@
 // import UseEffectApi from './Hooks/useEffect/UseEffectApi'
 // import UseEffectMulti from './Hooks/useEffect/UseEffectMulti'
 // import UseEffectString from './Hooks/useEffect/UseEffectString'
-
-import Counter from "./Hooks/useState/UseStateTasks/Counter"
-import InputField from "./Hooks/useState/UseStateTasks/InputField"
-import MiniToDoList from "./Hooks/useState/UseStateTasks/MiniToDoList"
-import ToggleText from "./Hooks/useState/UseStateTasks/ToggleText"
-import Theme from "./Hooks//useState//UseStateTasks//Theme"
-import FormValidation from "./Hooks//useState//UseStateTasks/FormValidation";
+// import Counter from "./Hooks/useState/UseStateTasks/Counter"
+// import InputField from "./Hooks/useState/UseStateTasks/InputField"
+// import MiniToDoList from "./Hooks/useState/UseStateTasks/MiniToDoList"
+// import ToggleText from "./Hooks/useState/UseStateTasks/ToggleText"
+// import Theme from "./Hooks//useState//UseStateTasks//Theme"
+// import FormValidation from "./Hooks//useState//UseStateTasks/FormValidation";
+import ArrayFetch from "./Hooks/useEffect/UseEffectTask/ArrayFetch"
+import FetchData from "./Hooks/useEffect/UseEffectTask/FetchData"
 const App = () => {
   return (
     <div>
-      <h2>UseState Example</h2>
+      <h2>UseEffect Example</h2>
       <hr />
-      <Counter/>
+      <FetchData/>
       <hr />
-      <ToggleText/>
-      <hr />
-      <InputField/>
-      <hr />
-      <MiniToDoList/>
-      <hr />
-      <Theme/>
-      <hr />
-      <FormValidation />
+      <ArrayFetch/>
     </div>
   )
 }
