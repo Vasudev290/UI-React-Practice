@@ -39,6 +39,8 @@
 // import FormValidation from "./Hooks//useState//UseStateTasks/FormValidation";
 import ArrayFetch from "./Hooks/useEffect/UseEffectTask/ArrayFetch"
 import FetchData from "./Hooks/useEffect/UseEffectTask/FetchData"
+import FetchFilter from "./Hooks/useEffect/UseEffectTask/FetchFilter"
+import FetchMale from "./Hooks/useEffect/UseEffectTask/FetchMale"
 const App = () => {
   return (
     <div>
@@ -47,6 +49,10 @@ const App = () => {
       <FetchData/>
       <hr />
       <ArrayFetch/>
+      <hr />
+      <FetchFilter/>
+      <hr />
+      <FetchMale/>
     </div>
   )
 }

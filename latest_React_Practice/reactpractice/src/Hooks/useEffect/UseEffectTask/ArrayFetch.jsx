@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 const ArrayFetch = () => {
     const [users, setUser] = useState([])
-    console.log(users)
+    //console.log(users)
     useEffect(() => {
         fetch("https://dummyjson.com/users")
         .then((resp) => resp.json())
