@@ -41,6 +41,7 @@
 // import FetchData from "./Hooks/useEffect/UseEffectTask/FetchData"
 // import FetchFilter from "./Hooks/useEffect/UseEffectTask/FetchFilter"
 
+import ApiJson from "./Hooks/useRef/useRefTasks/ApiJson"
 import ArrayRef from "./Hooks/useRef/useRefTasks/ArrayRef"
 import CounterWthReRender from "./Hooks/useRef/useRefTasks/CounterWthReRender"
 import InputField from "./Hooks/useRef/useRefTasks/InputField"
@@ -73,6 +74,8 @@ const App = () => {
       <ObjectRef/>
       <hr />
       <ArrayRef/>
+      <hr />
+      <ApiJson/>
     </div>
   )
 }
