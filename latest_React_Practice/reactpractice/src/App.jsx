@@ -45,6 +45,7 @@ import CounterWthReRender from "./Hooks/useRef/useRefTasks/CounterWthReRender"
 import InputField from "./Hooks/useRef/useRefTasks/InputField"
 import PrevState from "./Hooks/useRef/useRefTasks/PrevState"
 import StopWatch from "./Hooks/useRef/useRefTasks/StopWatch"
+import ToggleText from "./Hooks/useRef/useRefTasks/ToggleText"
 
 const App = () => {
   return (
@@ -58,6 +59,8 @@ const App = () => {
       <PrevState/>
       <hr />
       <StopWatch/>
+      <hr />
+      <ToggleText/>
     </div>
   )
 }
