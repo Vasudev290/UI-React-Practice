@@ -43,8 +43,10 @@
 
 import CounterWthReRender from "./Hooks/useRef/useRefTasks/CounterWthReRender"
 import InputField from "./Hooks/useRef/useRefTasks/InputField"
+import NumberRef from "./Hooks/useRef/useRefTasks/NumberRef"
 import PrevState from "./Hooks/useRef/useRefTasks/PrevState"
 import StopWatch from "./Hooks/useRef/useRefTasks/StopWatch"
+import StringRef from "./Hooks/useRef/useRefTasks/StringRef"
 import ToggleText from "./Hooks/useRef/useRefTasks/ToggleText"
 
 const App = () => {
@@ -61,6 +63,10 @@ const App = () => {
       <StopWatch/>
       <hr />
       <ToggleText/>
+      <hr />
+      <StringRef/>
+      <hr/>
+      <NumberRef/>
     </div>
   )
 }
