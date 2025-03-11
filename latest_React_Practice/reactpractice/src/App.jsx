@@ -37,22 +37,27 @@
 // import ToggleText from "./Hooks/useState/UseStateTasks/ToggleText"
 // import Theme from "./Hooks//useState//UseStateTasks//Theme"
 // import FormValidation from "./Hooks//useState//UseStateTasks/FormValidation";
-import ArrayFetch from "./Hooks/useEffect/UseEffectTask/ArrayFetch"
-import FetchData from "./Hooks/useEffect/UseEffectTask/FetchData"
-import FetchFilter from "./Hooks/useEffect/UseEffectTask/FetchFilter"
-import FetchMale from "./Hooks/useEffect/UseEffectTask/FetchMale"
+// import ArrayFetch from "./Hooks/useEffect/UseEffectTask/ArrayFetch"
+// import FetchData from "./Hooks/useEffect/UseEffectTask/FetchData"
+// import FetchFilter from "./Hooks/useEffect/UseEffectTask/FetchFilter"
+
+import CounterWthReRender from "./Hooks/useRef/useRefTasks/CounterWthReRender"
+import InputField from "./Hooks/useRef/useRefTasks/InputField"
+import PrevState from "./Hooks/useRef/useRefTasks/PrevState"
+import StopWatch from "./Hooks/useRef/useRefTasks/StopWatch"
+
 const App = () => {
   return (
     <div>
-      <h2>UseEffect Example</h2>
+      <h2>UseRef Example</h2>
       <hr />
-      <FetchData/>
+      <InputField/>
       <hr />
-      <ArrayFetch/>
+      <CounterWthReRender/>
       <hr />
-      <FetchFilter/>
+      <PrevState/>
       <hr />
-      <FetchMale/>
+      <StopWatch/>
     </div>
   )
 }
