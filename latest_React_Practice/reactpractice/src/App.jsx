@@ -41,9 +41,11 @@
 // import FetchData from "./Hooks/useEffect/UseEffectTask/FetchData"
 // import FetchFilter from "./Hooks/useEffect/UseEffectTask/FetchFilter"
 
+import ArrayRef from "./Hooks/useRef/useRefTasks/ArrayRef"
 import CounterWthReRender from "./Hooks/useRef/useRefTasks/CounterWthReRender"
 import InputField from "./Hooks/useRef/useRefTasks/InputField"
 import NumberRef from "./Hooks/useRef/useRefTasks/NumberRef"
+import ObjectRef from "./Hooks/useRef/useRefTasks/ObjectRef"
 import PrevState from "./Hooks/useRef/useRefTasks/PrevState"
 import StopWatch from "./Hooks/useRef/useRefTasks/StopWatch"
 import StringRef from "./Hooks/useRef/useRefTasks/StringRef"
@@ -67,6 +69,10 @@ const App = () => {
       <StringRef/>
       <hr/>
       <NumberRef/>
+      <hr />
+      <ObjectRef/>
+      <hr />
+      <ArrayRef/>
     </div>
   )
 }
