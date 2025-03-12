@@ -51,12 +51,15 @@
 // import StringRef from "./Hooks/useRef/useRefTasks/StringRef"
 // import ToggleText from "./Hooks/useRef/useRefTasks/ToggleText"
 import BasicEx from "./Hooks/React_Memo/BasicEx"
+import InputField from "./Hooks/useMemo/UseMemoPractice/InputField"
 const App = () => {
   return (
     <div>
       <h2>React.memo Example</h2>
       <hr />
       <BasicEx/>
+      <hr />
+      <InputField/>
     </div>
   )
 }
