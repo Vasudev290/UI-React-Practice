@@ -40,42 +40,23 @@
 // import ArrayFetch from "./Hooks/useEffect/UseEffectTask/ArrayFetch"
 // import FetchData from "./Hooks/useEffect/UseEffectTask/FetchData"
 // import FetchFilter from "./Hooks/useEffect/UseEffectTask/FetchFilter"
-
-import ApiJson from "./Hooks/useRef/useRefTasks/ApiJson"
-import ArrayRef from "./Hooks/useRef/useRefTasks/ArrayRef"
-import CounterWthReRender from "./Hooks/useRef/useRefTasks/CounterWthReRender"
-import InputField from "./Hooks/useRef/useRefTasks/InputField"
-import NumberRef from "./Hooks/useRef/useRefTasks/NumberRef"
-import ObjectRef from "./Hooks/useRef/useRefTasks/ObjectRef"
-import PrevState from "./Hooks/useRef/useRefTasks/PrevState"
-import StopWatch from "./Hooks/useRef/useRefTasks/StopWatch"
-import StringRef from "./Hooks/useRef/useRefTasks/StringRef"
-import ToggleText from "./Hooks/useRef/useRefTasks/ToggleText"
-
+// import ApiJson from "./Hooks/useRef/useRefTasks/ApiJson"
+// import ArrayRef from "./Hooks/useRef/useRefTasks/ArrayRef"
+// import CounterWthReRender from "./Hooks/useRef/useRefTasks/CounterWthReRender"
+// import InputField from "./Hooks/useRef/useRefTasks/InputField"
+// import NumberRef from "./Hooks/useRef/useRefTasks/NumberRef"
+// import ObjectRef from "./Hooks/useRef/useRefTasks/ObjectRef"
+// import PrevState from "./Hooks/useRef/useRefTasks/PrevState"
+// import StopWatch from "./Hooks/useRef/useRefTasks/StopWatch"
+// import StringRef from "./Hooks/useRef/useRefTasks/StringRef"
+// import ToggleText from "./Hooks/useRef/useRefTasks/ToggleText"
+import BasicEx from "./Hooks/React_Memo/BasicEx"
 const App = () => {
   return (
     <div>
-      <h2>UseRef Example</h2>
+      <h2>React.memo Example</h2>
       <hr />
-      <InputField/>
-      <hr />
-      <CounterWthReRender/>
-      <hr />
-      <PrevState/>
-      <hr />
-      <StopWatch/>
-      <hr />
-      <ToggleText/>
-      <hr />
-      <StringRef/>
-      <hr/>
-      <NumberRef/>
-      <hr />
-      <ObjectRef/>
-      <hr />
-      <ArrayRef/>
-      <hr />
-      <ApiJson/>
+      <BasicEx/>
     </div>
   )
 }
