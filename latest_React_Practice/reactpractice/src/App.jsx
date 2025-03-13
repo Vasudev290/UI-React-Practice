@@ -52,6 +52,7 @@
 // import ToggleText from "./Hooks/useRef/useRefTasks/ToggleText"
 import BasicEx from "./Hooks/React_Memo/BasicEx"
 import InputField from "./Hooks/useMemo/UseMemoPractice/InputField"
+import ApiData from "./Hooks/useMemo/UsemeoPratice/ApiData"
 import FactorialCalculator from "./Hooks/useMemo/UsemeoPratice/FactorialCalculator"
 import Filtering from "./Hooks/useMemo/UsemeoPratice/Filtering"
 import TextReversed from "./Hooks/useMemo/UsemeoPratice/TextReversed"
@@ -69,6 +70,8 @@ const App = () => {
      <TextReversed/>
      <hr />
      <Filtering/>
+     <hr />
+     <ApiData/>
     </div>
   )
 }
