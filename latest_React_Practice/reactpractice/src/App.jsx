@@ -52,6 +52,8 @@
 // import ToggleText from "./Hooks/useRef/useRefTasks/ToggleText"
 import BasicEx from "./Hooks/React_Memo/BasicEx"
 import InputField from "./Hooks/useMemo/UseMemoPractice/InputField"
+import FactorialCalculator from "./Hooks/useMemo/UsemeoPratice/FactorialCalculator"
+import TextReversed from "./Hooks/useMemo/UsemeoPratice/TextReversed"
 const App = () => {
   return (
     <div>
@@ -60,6 +62,10 @@ const App = () => {
       <BasicEx/>
       <hr />
       <InputField/>
+      <hr />
+     <FactorialCalculator/>
+     <hr />
+     <TextReversed/>
     </div>
   )
 }
