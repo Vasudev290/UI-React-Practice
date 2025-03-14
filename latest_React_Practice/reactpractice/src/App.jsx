@@ -50,31 +50,24 @@
 // import StopWatch from "./Hooks/useRef/useRefTasks/StopWatch"
 // import StringRef from "./Hooks/useRef/useRefTasks/StringRef"
 // import ToggleText from "./Hooks/useRef/useRefTasks/ToggleText"
-import BasicEx from "./Hooks/React_Memo/BasicEx"
-import InputField from "./Hooks/useMemo/UseMemoPractice/InputField"
-import ApiData from "./Hooks/useMemo/UsemeoPratice/ApiData"
-import FactorialCalculator from "./Hooks/useMemo/UsemeoPratice/FactorialCalculator"
-import Filtering from "./Hooks/useMemo/UsemeoPratice/Filtering"
-import InputFieldText from "./Hooks/useMemo/UsemeoPratice/InputFieldText"
-import TextReversed from "./Hooks/useMemo/UsemeoPratice/TextReversed"
+// import BasicEx from "./Hooks/React_Memo/BasicEx"
+// import InputField from "./Hooks/useMemo/UseMemoPractice/InputField"
+// import ApiData from "./Hooks/useMemo/UsemeoPratice/ApiData"
+// import ApiUseMemo from "./Hooks/useMemo/UsemeoPratice/ApiUseMemo"
+// import FactorialCalculator from "./Hooks/useMemo/UsemeoPratice/FactorialCalculator"
+// import Filtering from "./Hooks/useMemo/UsemeoPratice/Filtering"
+// import InputFieldText from "./Hooks/useMemo/UsemeoPratice/InputFieldText"
+// import Reversed from "./Hooks/useMemo/UsemeoPratice/Reversed"
+// import TextReversed from "./Hooks/useMemo/UsemeoPratice/TextReversed"
+// import UseMemoEx from "./Hooks/useMemo/UsemeoPratice/UseMemoEx"
+import UseMemoBasicEx from "./Hooks/useCallback/UseCallbackBasicEx"
+
 const App = () => {
   return (
     <div>
-      <h2>React.memo Example</h2>
+      <h2>UseCallback Example</h2>
       <hr />
-      <BasicEx/>
-      <hr />
-      <InputField/>
-      <hr />
-     <FactorialCalculator/>
-     <hr />
-     <TextReversed/>
-     <hr />
-     <Filtering/>
-     <hr />
-     <ApiData/>
-     <hr />
-    <InputFieldText/>
+      <UseMemoBasicEx/>
     </div>
   )
 }
