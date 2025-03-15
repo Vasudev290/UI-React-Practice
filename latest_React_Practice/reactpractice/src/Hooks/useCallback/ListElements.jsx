@@ -3,14 +3,14 @@ import React, { useEffect, useState } from "react";
 const ListElements = ({ getItem }) => {
   const [item, setItem] = useState([]);
   useEffect(() => {
-    setItem(getItem());
-    console.log("Setting Item..!")
+    console.log("Setting Item !");
+    setItem(getItem(10));
   }, [getItem]);
   return (
     <div>
-      <h2>List Elements</h2>
+      <h3>List Item</h3>
       {item.map((item, index) => {
-       return <p key={index}>{item}</p>;
+        return <li key={index}>{item}</li>;
       })}
     </div>
   );

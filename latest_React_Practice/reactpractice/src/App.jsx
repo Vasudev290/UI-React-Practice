@@ -61,6 +61,7 @@
 // import TextReversed from "./Hooks/useMemo/UsemeoPratice/TextReversed"
 // import UseMemoEx from "./Hooks/useMemo/UsemeoPratice/UseMemoEx"
 // import UseMemoBasicEx from "./Hooks/useCallback/UseCallbackBasicEx"
+import UseMemoBasicEx from "./Hooks/useCallback/UseCallbackBasicEx"
 import CalculateEx from "./Hooks/useMemo/UsemeoPratice/CalculateEx"
 
 const App = () => {
@@ -69,6 +70,8 @@ const App = () => {
       <h2>UseMemo Example</h2>
       <hr />
       <CalculateEx/>
+      <hr />
+      <UseMemoBasicEx/>
     </div>
   )
 }
