@@ -60,14 +60,15 @@
 // import Reversed from "./Hooks/useMemo/UsemeoPratice/Reversed"
 // import TextReversed from "./Hooks/useMemo/UsemeoPratice/TextReversed"
 // import UseMemoEx from "./Hooks/useMemo/UsemeoPratice/UseMemoEx"
-import UseMemoBasicEx from "./Hooks/useCallback/UseCallbackBasicEx"
+// import UseMemoBasicEx from "./Hooks/useCallback/UseCallbackBasicEx"
+import CalculateEx from "./Hooks/useMemo/UsemeoPratice/CalculateEx"
 
 const App = () => {
   return (
     <div>
-      <h2>UseCallback Example</h2>
+      <h2>UseMemo Example</h2>
       <hr />
-      <UseMemoBasicEx/>
+      <CalculateEx/>
     </div>
   )
 }
