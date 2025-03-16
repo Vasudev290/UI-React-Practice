@@ -63,35 +63,26 @@
 // import UseMemoBasicEx from "./Hooks/useCallback/UseCallbackBasicEx"
 // import UseMemoBasicEx from "./Hooks/useCallback/UseCallbackBasicEx"
 // import CalculateEx from "./Hooks/useMemo/UsemeoPratice/CalculateEx"
-import AddItem from "./Hooks/useCallback/useCallbackPractice/AddItem"
-import ApiData from "./Hooks/useCallback/useCallbackPractice/ApiData"
-import DataObject from "./Hooks/useCallback/useCallbackPractice/DataObject"
-import ExpensiveCalculation from "./Hooks/useCallback/useCallbackPractice/ExpensiveCalculation"
-import InputFieldString from "./Hooks/useCallback/useCallbackPractice/InputFieldString"
-import IsVisibile from "./Hooks/useCallback/useCallbackPractice/IsVisibile"
-import NumberInc from "./Hooks/useCallback/useCallbackPractice/NumberInc"
-import PropsManage1 from "./Hooks/useCallback/useCallbackPractice/PropsManage1"
+// import AddItem from "./Hooks/useCallback/useCallbackPractice/AddItem"
+// import ApiData from "./Hooks/useCallback/useCallbackPractice/ApiData"
+// import DataObject from "./Hooks/useCallback/useCallbackPractice/DataObject"
+// import ExpensiveCalculation from "./Hooks/useCallback/useCallbackPractice/ExpensiveCalculation"
+// import InputFieldString from "./Hooks/useCallback/useCallbackPractice/InputFieldString"
+// import IsVisibile from "./Hooks/useCallback/useCallbackPractice/IsVisibile"
+// import NumberInc from "./Hooks/useCallback/useCallbackPractice/NumberInc"
+// import PropsManage1 from "./Hooks/useCallback/useCallbackPractice/PropsManage1"
+
+import CountComponent from "./Hooks/CustomHooks/UseCounter/CountComponent"
+import User from "./Hooks/CustomHooks/UseFetch/User"
 
 const App = () => {
   return (
     <div>
-      <h2>UseMemo Example</h2>
+      <h2>Custom React Hook Example</h2>
       <hr />
-      <NumberInc/>
+      <CountComponent/>
       <hr />
-      <InputFieldString/>
-      <hr />
-      <IsVisibile/>
-      <hr />
-      <DataObject/>
-      <hr />
-      <AddItem/>
-      <hr />
-      <ApiData/>
-      <hr />
-      <PropsManage1/>
-      <hr />
-      <ExpensiveCalculation/>
+      <User/>
     </div>
   )
 }
