@@ -66,9 +66,11 @@
 import AddItem from "./Hooks/useCallback/useCallbackPractice/AddItem"
 import ApiData from "./Hooks/useCallback/useCallbackPractice/ApiData"
 import DataObject from "./Hooks/useCallback/useCallbackPractice/DataObject"
+import ExpensiveCalculation from "./Hooks/useCallback/useCallbackPractice/ExpensiveCalculation"
 import InputFieldString from "./Hooks/useCallback/useCallbackPractice/InputFieldString"
 import IsVisibile from "./Hooks/useCallback/useCallbackPractice/IsVisibile"
 import NumberInc from "./Hooks/useCallback/useCallbackPractice/NumberInc"
+import PropsManage1 from "./Hooks/useCallback/useCallbackPractice/PropsManage1"
 
 const App = () => {
   return (
@@ -86,6 +88,10 @@ const App = () => {
       <AddItem/>
       <hr />
       <ApiData/>
+      <hr />
+      <PropsManage1/>
+      <hr />
+      <ExpensiveCalculation/>
     </div>
   )
 }
