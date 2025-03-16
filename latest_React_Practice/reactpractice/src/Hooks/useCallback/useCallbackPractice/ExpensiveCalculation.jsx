@@ -20,6 +20,9 @@ const ExpensiveCalculation = () => {
         backgroundColor: toggle ? "black" : "white",
         color: toggle ? "white" : "black",
         padding: "20px",
+        margin: "10px",
+        marginLeft: '25px', 
+        marginRight: '25px', 
         textAlign: "center" 
     }
   return (
