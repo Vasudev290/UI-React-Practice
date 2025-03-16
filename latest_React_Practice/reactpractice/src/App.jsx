@@ -61,17 +61,31 @@
 // import TextReversed from "./Hooks/useMemo/UsemeoPratice/TextReversed"
 // import UseMemoEx from "./Hooks/useMemo/UsemeoPratice/UseMemoEx"
 // import UseMemoBasicEx from "./Hooks/useCallback/UseCallbackBasicEx"
-import UseMemoBasicEx from "./Hooks/useCallback/UseCallbackBasicEx"
-import CalculateEx from "./Hooks/useMemo/UsemeoPratice/CalculateEx"
+// import UseMemoBasicEx from "./Hooks/useCallback/UseCallbackBasicEx"
+// import CalculateEx from "./Hooks/useMemo/UsemeoPratice/CalculateEx"
+import AddItem from "./Hooks/useCallback/useCallbackPractice/AddItem"
+import ApiData from "./Hooks/useCallback/useCallbackPractice/ApiData"
+import DataObject from "./Hooks/useCallback/useCallbackPractice/DataObject"
+import InputFieldString from "./Hooks/useCallback/useCallbackPractice/InputFieldString"
+import IsVisibile from "./Hooks/useCallback/useCallbackPractice/IsVisibile"
+import NumberInc from "./Hooks/useCallback/useCallbackPractice/NumberInc"
 
 const App = () => {
   return (
     <div>
       <h2>UseMemo Example</h2>
       <hr />
-      <CalculateEx/>
+      <NumberInc/>
       <hr />
-      <UseMemoBasicEx/>
+      <InputFieldString/>
+      <hr />
+      <IsVisibile/>
+      <hr />
+      <DataObject/>
+      <hr />
+      <AddItem/>
+      <hr />
+      <ApiData/>
     </div>
   )
 }
