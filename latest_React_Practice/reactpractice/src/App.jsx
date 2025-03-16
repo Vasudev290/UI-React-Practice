@@ -71,18 +71,19 @@
 // import IsVisibile from "./Hooks/useCallback/useCallbackPractice/IsVisibile"
 // import NumberInc from "./Hooks/useCallback/useCallbackPractice/NumberInc"
 // import PropsManage1 from "./Hooks/useCallback/useCallbackPractice/PropsManage1"
+// import CountComponent from "./Hooks/CustomHooks/UseCounter/CountComponent"
+// import User from "./Hooks/CustomHooks/UseFetch/User"
 
-import CountComponent from "./Hooks/CustomHooks/UseCounter/CountComponent"
-import User from "./Hooks/CustomHooks/UseFetch/User"
+import Dashboard from "./HigherOrderFunction/Authentication/Dashboard"
+import Profile from "./HigherOrderFunction/Authentication/Profile"
 
 const App = () => {
   return (
     <div>
-      <h2>Custom React Hook Example</h2>
+      <h2>Higher Order Component Example</h2>
       <hr />
-      <CountComponent/>
-      <hr />
-      <User/>
+      <Profile/>
+      <Dashboard/>
     </div>
   )
 }
