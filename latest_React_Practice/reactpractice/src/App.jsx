@@ -74,9 +74,9 @@
 // import CountComponent from "./Hooks/CustomHooks/UseCounter/CountComponent"
 // import User from "./Hooks/CustomHooks/UseFetch/User"
 
-import Dashboard from "./HigherOrderFunction/Authentication/Dashboard"
-import Profile from "./HigherOrderFunction/Authentication/Profile"
-
+import UserAuthenticated from "./HigherOrderComponent/Auth/Dash"
+import Dashboard from "./HigherOrderComponent/Authentication/Dashboard"
+import Profile from "./HigherOrderComponent/Authentication/Profile"
 const App = () => {
   return (
     <div>
@@ -84,6 +84,8 @@ const App = () => {
       <hr />
       <Profile/>
       <Dashboard/>
+      <hr />
+      <UserAuthenticated/>
     </div>
   )
 }
