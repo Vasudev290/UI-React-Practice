@@ -77,6 +77,8 @@
 import UserAuthenticated from "./HigherOrderComponent/Auth/Dash"
 import Dashboard from "./HigherOrderComponent/Authentication/Dashboard"
 import Profile from "./HigherOrderComponent/Authentication/Profile"
+import FetchPosts from "./HigherOrderComponent/FetchComponents/FetchPosts"
+import FetchTodos from "./HigherOrderComponent/FetchComponents/FetchTodos"
 const App = () => {
   return (
     <div>
@@ -86,6 +88,10 @@ const App = () => {
       <Dashboard/>
       <hr />
       <UserAuthenticated/>
+      <hr />
+      <FetchTodos name="Vasu"/>
+      <hr />
+      <FetchPosts name="Vasu"/>
     </div>
   )
 }
