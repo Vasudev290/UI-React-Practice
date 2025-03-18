@@ -79,6 +79,8 @@ import Dashboard from "./HigherOrderComponent/Authentication/Dashboard"
 import Profile from "./HigherOrderComponent/Authentication/Profile"
 import FetchPosts from "./HigherOrderComponent/FetchComponents/FetchPosts"
 import FetchTodos from "./HigherOrderComponent/FetchComponents/FetchTodos"
+import HellowithLogger from "./HigherOrderComponent/HOCPractices/HelloComponent/Hello"
+import MessageWithBorder from "./HigherOrderComponent/HOCPractices/WithBorder"
 const App = () => {
   return (
     <div>
@@ -92,6 +94,9 @@ const App = () => {
       <FetchTodos name="Vasu"/>
       <hr />
       <FetchPosts name="Vasu"/>
+      <hr />
+      <MessageWithBorder text="Hello"/>
+      <HellowithLogger name="Arjun"/>
     </div>
   )
 }
