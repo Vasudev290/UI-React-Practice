@@ -1,4 +1,5 @@
-// import React from 'react'
+import React from 'react'
+import '../node_modules/bootstrap/dist/css/bootstrap.css'
 // import User from './Hooks/useContext/Props/User'
 // import ApiData from './Hooks/useContext/Props/ApiProps/ApiData'
 // import ThemePorps from './Hooks/useContext/Props/ThemeProps/ThemePorps'
@@ -73,37 +74,28 @@
 // import PropsManage1 from "./Hooks/useCallback/useCallbackPractice/PropsManage1"
 // import CountComponent from "./Hooks/CustomHooks/UseCounter/CountComponent"
 // import User from "./Hooks/CustomHooks/UseFetch/User"
-
-import UserAuthenticated from "./HigherOrderComponent/Auth/Dash"
-import Dashboard from "./HigherOrderComponent/Authentication/Dashboard"
-import Profile from "./HigherOrderComponent/Authentication/Profile"
-import FetchPosts from "./HigherOrderComponent/FetchComponents/FetchPosts"
-import FetchTodos from "./HigherOrderComponent/FetchComponents/FetchTodos"
-import UserListwithLoading from "./HigherOrderComponent/HOCPractices/ApiUrlData/UserList"
-import IsAuthed from "./HigherOrderComponent/HOCPractices/Authentication/Dashboard"
-import HellowithLogger from "./HigherOrderComponent/HOCPractices/HelloComponent/Hello"
-import MessageWithBorder from "./HigherOrderComponent/HOCPractices/WithBorder"
+// import UserAuthenticated from "./HigherOrderComponent/Auth/Dash"
+// import Dashboard from "./HigherOrderComponent/Authentication/Dashboard"
+// import Profile from "./HigherOrderComponent/Authentication/Profile"
+// import FetchPosts from "./HigherOrderComponent/FetchComponents/FetchPosts"
+// import FetchTodos from "./HigherOrderComponent/FetchComponents/FetchTodos"
+// import UserListwithLoading from "./HigherOrderComponent/HOCPractices/ApiUrlData/UserList"
+// import IsAuthed from "./HigherOrderComponent/HOCPractices/Authentication/Dashboard"
+// import HellowithLogger from "./HigherOrderComponent/HOCPractices/HelloComponent/Hello"
+// import MessageWithBorder from "./HigherOrderComponent/HOCPractices/WithBorder"
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Navbar from './ReactRouterDom/Components/Navbar'
+import Contect from './ReactRouterDom/Components/Contect'
+import About from './ReactRouterDom/Components/About'
 const App = () => {
   return (
-    <div>
-      <h2>Higher Order Component Example</h2>
-      <hr />
-      <Profile/>
-      <Dashboard/>
-      <hr />
-      <UserAuthenticated/>
-      <hr />
-      <FetchTodos name="Vasu"/>
-      <hr />
-      <FetchPosts name="Vasu"/>
-      <hr />
-      <MessageWithBorder text="Hello"/>
-      <HellowithLogger name="Arjun"/>
-      <hr />
-      <IsAuthed name="Subbramanyam Swamy"/>
-      <hr />
-      <UserListwithLoading/>
-    </div>
+   <Router>
+    <Navbar/>
+    <Routes>
+      <Route path='/about' element={<About/>}></Route>
+      <Route path='/contact' element={<Contect/>}></Route>
+    </Routes>
+   </Router>
   )
 }
 
