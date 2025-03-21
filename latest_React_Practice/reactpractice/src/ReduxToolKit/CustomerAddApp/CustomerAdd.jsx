@@ -1,32 +1,30 @@
-import React, { useState } from "react";
-import CustomerView from "./CustomerView";
-
+import React, { useState } from 'react'
+// import CustomerView from './CustomerView'
+import { addCustomer as addCustomerAction } from './Slices/CustomerSlices'
+import { useDispatch } from 'react-redux'
 const CustomerAdd = () => {
-  const [data, setData] = useState("");
-  const [customer, setCustomer] = useState([]);
-
+  const[input, setInput] = useState("")
+  const dispatch = useDispatch()
+  // const[consumer, setCounsumer] = useState([])
   const addCustomer = () => {
-    if (data) {
-      setCustomer((prevSt) => [...prevSt, data]);
-      console.log(customer);
-      setData("");
+    if(input){
+      dispatch(addCustomerAction(input))
+      // setCounsumer((prevSt) => [...prevSt, input])
+      // console.log(consumer)
+      setInput("")
     }
-  };
+  }
   return (
-    <center>
-      <div>
-        <h2>Add New Customer</h2>
-        <input
-          type="text"
-          value={data}
-          placeholder="Type Something.!"
-          onChange={(e) => setData(e.target.value)}
-        />
-        <button onClick={addCustomer}>Add</button>
-      </div>
-      <CustomerView customers={customer} />
-    </center>
-  );
-};
+    <>
+    <div>
+      <h2>Add New Customer</h2>
+      <input type="text" placeholder='Type Here..!' value={input} onChange={(e) => setInput(e.target.value)}/> 
+      <button onClick={addCustomer}>Add</button>
+    </div>
+    {/* <CustomerView/>  */}
+    </>
+    
+  )
+}
 
-export default CustomerAdd;
+export default CustomerAdd

@@ -1,6 +1,5 @@
 import React from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
-import CustomerAdd from "./ReduxToolKit/CustomerAddApp/CustomerAdd";
 // import CustomerView from "./ReduxToolKit/CustomerAddApp/CustomerView";
 // import User from './Hooks/useContext/Props/User'
 // import ApiData from './Hooks/useContext/Props/ApiProps/ApiData'
@@ -93,12 +92,19 @@ import CustomerAdd from "./ReduxToolKit/CustomerAddApp/CustomerAdd";
 // import Profile from "./ReactRouterDom/Components1/Pages/Profile";
 // import Discuss from "./ReactRouterDom/Components1/Pages/Discuss";
 // import ContestLayout from "./ReactRouterDom/Components1/Pages/ContestLayout";
+import { Provider } from "react-redux";
+import { Store } from "./Store";
+import CustomerAdd from "./ReduxToolKit/CustomerAddApp/CustomerAdd";
+import CustomerView from "./ReduxToolKit//CustomerAddApp/CustomerView"
 const App = () => {
   return (
-    <div>
-      <h3>React ReduxToolKit</h3>
-      <CustomerAdd/>
-    </div>
+    <Provider store={Store}>
+      <div>
+        <h3>React ReduxToolKit</h3>
+        <CustomerAdd />
+        <CustomerView />
+      </div>
+    </Provider>
   );
 };
 
