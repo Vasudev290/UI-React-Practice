@@ -44,17 +44,18 @@
 
 .userSection {
     border: 1px solid gray;
-    height: 33%;
+    word-spacing: 0;
+    height: 50%;
 }
 
 .commentSection {
     border: 1px solid gray;
-    height: 33%;
+    height: 50%;
 }
 
 .likeSection {
     border: 1px solid gray;
-    height: 33%;
+    height: 50%;
 }
 
 .postButtons {
