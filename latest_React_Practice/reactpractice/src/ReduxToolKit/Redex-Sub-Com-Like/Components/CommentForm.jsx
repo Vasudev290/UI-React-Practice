@@ -16,7 +16,7 @@ const CommentForm = () => {
             value={userComments}
             onChange={(e) => setUserCommets(e.target.value)}
             cols="50"
-            rows="20"
+            rows="5"
             id=""
           ></textarea>
         </div>

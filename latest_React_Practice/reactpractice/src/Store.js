@@ -1,9 +1,9 @@
-import {configureStore} from '@reduxjs/toolkit'
-import customerReducer from './ReduxToolKit//CustomerAddApp/Slices/CustomerSlices'
-import counterSlice  from './ReduxToolKit/Redex-Sub-Com-Like/Slices/CounterSlices'
+import {configureStore} from '@reduxjs/toolkit';
+import customerReducer from './ReduxToolKit//CustomerAddApp/Slices/CustomerSlices';
+import likeReducer from './ReduxToolKit/Redex-Sub-Com-Like/Slices/likeCountSlice';
 export const Store = configureStore({
     reducer: {
         customers: customerReducer,
-        counter: counterSlice
+        count: likeReducer,
     }
 })
