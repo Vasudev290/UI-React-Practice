@@ -1,9 +1,13 @@
 import React, { useState } from "react";
-
+import { useDispatch } from "react-redux";
+import { addComments } from "../Slices/commentSlice";
 const CommentForm = () => {
   const [userComments, setUserCommets] = useState("");
+  const dispatch = useDispatch();
+
   const submitComments = (e) => {
     e.preventDefault();
+    dispatch(addComments(userComments))
     console.log("User Commmets:", userComments);
     setUserCommets("")
   };

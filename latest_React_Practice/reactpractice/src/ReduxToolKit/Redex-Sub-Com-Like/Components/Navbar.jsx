@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux'
 const Navbar = () => {
     const updatedLikeButton = useSelector((state) => state.count.value)
     const subscriber = useSelector((state) => state.subscriber.users.length)
+    const comments = useSelector((state) => state.comments.comments.length)
     
   return (
     <div className='navSection'>
@@ -14,7 +15,7 @@ const Navbar = () => {
             Subscribe:{subscriber}
         </div>
         <div className='navComments'>
-            Comments:
+            Comments: {comments}
         </div>
         <div className='navLikes'>
             Likes:{updatedLikeButton}
