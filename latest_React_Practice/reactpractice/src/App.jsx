@@ -96,10 +96,11 @@ import { Provider } from "react-redux";
 import { Store } from "./Store";
 import CustomerAdd from "./ReduxToolKit/CustomerAddApp/CustomerAdd";
 import CustomerView from "./ReduxToolKit//CustomerAddApp/CustomerView";
-import './App.css'
-import Navbar from "./ReduxToolKit/Redex-Sub-Com-Like/Components/Navbar";
-import PostDisplay from "./ReduxToolKit/Redex-Sub-Com-Like/Components/PostDisplay";
+// import './App.css'
+// import Navbar from "./ReduxToolKit/Redex-Sub-Com-Like/Components/Navbar";
+// import PostDisplay from "./ReduxToolKit/Redex-Sub-Com-Like/Components/PostDisplay";
 import Counter from "./ReduxToolKit/CounterApp/Counter";
+import UserData from "./ReduxToolKit/UserData/UserData";
 const App = () => {
   return (
     <Provider store={Store}>
@@ -110,8 +111,10 @@ const App = () => {
         <hr />
         <Counter/>
         <hr />
-        <Navbar/>
-        <PostDisplay/>
+        <UserData/>
+        <hr />
+        {/* <Navbar/>
+        <PostDisplay/> */}
       </div>
     </Provider>
   );
