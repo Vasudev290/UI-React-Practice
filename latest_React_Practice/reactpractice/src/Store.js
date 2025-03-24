@@ -3,11 +3,13 @@ import customerReducer from './ReduxToolKit//CustomerAddApp/Slices/CustomerSlice
 import likeReducer from './ReduxToolKit/Redex-Sub-Com-Like/Slices/likeCountSlice';
 import subscriberSlice  from './ReduxToolKit/Redex-Sub-Com-Like/Slices/subscribeSlice';
 import commentSlice  from './ReduxToolKit/Redex-Sub-Com-Like/Slices/commentSlice';
+import counterSlices  from './ReduxToolKit/CounterApp/Slices/counter';
 export const Store = configureStore({
     reducer: {
         customers: customerReducer,
         count: likeReducer,
         subscriber: subscriberSlice,
-        comments: commentSlice
+        comments: commentSlice,
+        counter: counterSlices
     }
 })

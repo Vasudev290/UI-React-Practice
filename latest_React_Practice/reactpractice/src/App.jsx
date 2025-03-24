@@ -99,6 +99,7 @@ import CustomerView from "./ReduxToolKit//CustomerAddApp/CustomerView";
 import './App.css'
 import Navbar from "./ReduxToolKit/Redex-Sub-Com-Like/Components/Navbar";
 import PostDisplay from "./ReduxToolKit/Redex-Sub-Com-Like/Components/PostDisplay";
+import Counter from "./ReduxToolKit/CounterApp/Counter";
 const App = () => {
   return (
     <Provider store={Store}>
@@ -106,6 +107,8 @@ const App = () => {
         <h3>React ReduxToolKit</h3>
         <CustomerAdd />
         <CustomerView />
+        <hr />
+        <Counter/>
         <hr />
         <Navbar/>
         <PostDisplay/>
