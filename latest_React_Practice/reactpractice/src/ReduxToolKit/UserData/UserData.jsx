@@ -43,7 +43,7 @@ const UserData = () => {
         onClick={() => {
           if (userId) {
             dispatch(updateUser({ id: userId, name: newUser })); 
-            setNewUser('');
+            setNewUser("");
           } else {
             dispatch(addUser({ name: newUser }));
             setNewUser(""); 
