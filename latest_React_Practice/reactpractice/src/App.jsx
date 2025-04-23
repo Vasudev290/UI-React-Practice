@@ -92,15 +92,15 @@ import "../node_modules/bootstrap/dist/css/bootstrap.css";
 // import Profile from "./ReactRouterDom/Components1/Pages/Profile";
 // import Discuss from "./ReactRouterDom/Components1/Pages/Discuss";
 // import ContestLayout from "./ReactRouterDom/Components1/Pages/ContestLayout";
+// import Counter from "./ReduxToolKit/CounterApp/Counter";
+// import UserData from "./ReduxToolKit/UserData/UserData";
 import { Provider } from "react-redux";
 import { Store } from "./Store";
 import CustomerAdd from "./ReduxToolKit/CustomerAddApp/CustomerAdd";
 import CustomerView from "./ReduxToolKit//CustomerAddApp/CustomerView";
-// import './App.css'
-// import Navbar from "./ReduxToolKit/Redex-Sub-Com-Like/Components/Navbar";
-// import PostDisplay from "./ReduxToolKit/Redex-Sub-Com-Like/Components/PostDisplay";
-import Counter from "./ReduxToolKit/CounterApp/Counter";
-import UserData from "./ReduxToolKit/UserData/UserData";
+import './App.css'
+import Navbar from "./ReduxToolKit/Redex-Sub-Com-Like/Components/Navbar";
+import PostDisplay from "./ReduxToolKit/Redex-Sub-Com-Like/Components/PostDisplay";
 const App = () => {
   return (
     <Provider store={Store}>
@@ -109,12 +109,12 @@ const App = () => {
         <CustomerAdd />
         <CustomerView />
         <hr />
-        <Counter/>
+        {/* <Counter/> */}
         <hr />
-        <UserData/>
+        {/* <UserData/> */}
         <hr />
-        {/* <Navbar/>
-        <PostDisplay/> */}
+        <Navbar/>
+        <PostDisplay/>
       </div>
     </Provider>
   );
