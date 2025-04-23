@@ -1,0 +1,19 @@
+{
+  "name": "react-setup",
+  "version": "1.0.0",
+  "description": "Creating the NEW REACT APP WITHOUT CRA Template form",
+  "license": "ISC",
+  "author": "Vasu",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^6.0.1"
+  }
+}
