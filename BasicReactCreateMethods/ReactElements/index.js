@@ -2,8 +2,8 @@
 
 //First step to javaScript
 const heading = document.createElement('h2')
-// heading.id = "title"
-// heading.innerText = "Hello React App";
+heading.id = "title"
+heading.innerText = "Hello React App";
 
 // const container = document.getElementById("app")
 // container.appendChild(heading)
