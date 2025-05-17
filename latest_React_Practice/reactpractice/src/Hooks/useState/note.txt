@@ -1,3 +1,8 @@
+1.What is Hooks ?
+hooks is react are plain javascript function.
+hooks can only be called inside another javascript function.
+every hooks should start with "use" prefix.
+
 1. What is useState Hook?
 The useState hook is one of the most commonly used hooks in React. 
 It allows functional components to have state, which was previously only possible with class components.
