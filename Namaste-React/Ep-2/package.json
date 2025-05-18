@@ -1,0 +1,25 @@
+{
+  "name": "ep-2",
+  "version": "1.0.0",
+  "description": "This is namaste react by Vasu dev",
+  "license": "ISC",
+  "author": "Vasu Dev",
+  "type": "commonjs",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Vasudev290/UI-React-Practice.git"
+  },
+  "devDependencies": {
+    "parcel": "^2.15.1"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
