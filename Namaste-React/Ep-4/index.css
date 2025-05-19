@@ -1,0 +1,47 @@
+.header{
+   display: flex;
+   justify-content: space-between;
+   border: 1px solid black;
+}
+.logo{
+   width: 150px;
+}
+.nav-item{
+    padding: 0px 20px;
+}
+.nav-item ul{
+   font-size: 24px;
+   display: flex;
+   list-style-type: none;
+}
+
+.nav-item ul li {
+   padding: 10px;
+   margin: 10px;
+}
+
+.resto-container{
+   padding: 5px;
+   width: 200px;
+   height: 350px;
+   
+}
+.resto-container:hover{
+   cursor: pointer;
+   border: 1px solid black;
+}
+
+.search-bar{
+   padding: 10px;
+}
+
+.res-logo{
+   width: 100%;
+}
+
+.rest-container{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+
+}
