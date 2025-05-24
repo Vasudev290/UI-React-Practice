@@ -221,6 +221,137 @@ const resObj = [
   {
     card: {
       info: {
+        id: "156414",
+        name: "The Good Bowl",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/15/3d1e512a-c179-421f-969d-e05e50ed5b59_156414.jpg",
+        locality: "Sector 2, 27th Main Road, HSR Layout",
+        cuisines: ["Biryani", "Pastas", "Punjabi", "Desserts", "Beverages"],
+        avgRating: 4.3,
+        sla: { deliveryTime: 21 },
+        aggregatedDiscountInfoV3: { subHeader: "UPTO ₹80" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
+        id: "84930",
+        name: "Biryani Zest",
+        cloudinaryImageId: "nqsofzc5tobfe4sflvgy",
+        locality: "Vignana Nagar",
+        cuisines: [
+          "Biryani",
+          "Andhra",
+          "South Indian",
+          "North Indian",
+          "Tandoor",
+        ],
+        avgRating: 4.3,
+        sla: { deliveryTime: 25 },
+        aggregatedDiscountInfoV3: { subHeader: "ABOVE ₹249" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
+        id: "361866",
+        name: "Peetuk",
+        cloudinaryImageId: "mjbyg3ph9jsh0b6d3mwm",
+        locality: "7th Cross, Domlur",
+        cuisines: ["Bengali", "Chinese"],
+        avgRating: 4.3,
+        sla: { deliveryTime: 27 },
+        aggregatedDiscountInfoV3: { subHeader: "ABOVE ₹499" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
+        id: "14837",
+        name: "High Street",
+        cloudinaryImageId: "qqwbp7qd3ujocqjhqxvt",
+        locality: "HSR Layout",
+        cuisines: [
+          "Biryani",
+          "North Indian",
+          "Tandoor",
+          "Hyderabadi",
+          "Andhra",
+          "Chinese",
+        ],
+        avgRating: 4.4,
+        sla: { deliveryTime: 24 },
+        aggregatedDiscountInfoV3: { subHeader: "UPTO ₹100" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
+        id: "83129",
+        name: "UBQ-Meals,Thalis & Bowls",
+        cloudinaryImageId: "gsjdnjaohsvbbp0uspfz",
+        locality: "Indiranagar",
+        cuisines: ["Barbecue", "Biryani", "Kebabs", "Mughlai", "Desserts"],
+        avgRating: 4.1,
+        sla: { deliveryTime: 35 },
+        aggregatedDiscountInfoV3: { subHeader: "UPTO ₹100" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
+        id: "41795",
+        name: "Behrouz Biryani",
+        cloudinaryImageId: "a4ffed13eb197c6df43dfe1c756560e5",
+        locality:
+          "Beml Circle, Opp Kempegowda Statue, Below Red chilly restaurant, Near GMR Pride HDFC bank",
+        cuisines: [
+          "Biryani",
+          "North Indian",
+          "Kebabs",
+          "Mughlai",
+          "Lucknowi",
+          "Hyderabadi",
+          "Desserts",
+          "Beverages",
+        ],
+        avgRating: 4.2,
+        sla: { deliveryTime: 25 },
+        aggregatedDiscountInfoV3: { subHeader: "UPTO ₹126" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
+        id: "186098",
+        name: "The Biryani Life",
+        cloudinaryImageId: "wzlncs2jpigoeu6dc7os",
+        locality:
+          "Beml Circle, Opp Kempegowda Statue, Below Red chilly restaurant, Near GMR Pride HDFC bank",
+        cuisines: [
+          "Biryani",
+          "Mughlai",
+          "Lucknowi",
+          "Hyderabadi",
+          "Kebabs",
+          "Desserts",
+          "Beverages",
+        ],
+        avgRating: 3.9,
+        sla: { deliveryTime: 19 },
+        aggregatedDiscountInfoV3: { subHeader: "ABOVE ₹549" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
         id: "142291",
         name: "Aroma's Hyderabad House",
         cloudinaryImageId: "jdfi5bh0hmdet7g7qk5z",
