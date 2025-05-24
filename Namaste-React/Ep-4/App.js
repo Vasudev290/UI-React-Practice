@@ -57,7 +57,6 @@ const Header = () => {
 
 //third way of writing props
 
-
 //RestoCard Component
 const RestaurentCard = (props) => {
   //console.log(props)
@@ -230,6 +229,108 @@ const resObj = [
         avgRating: 4.1,
         sla: { deliveryTime: 20 },
         aggregatedDiscountInfoV3: { subHeader: "ABOVE ₹249" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
+        id: "23682",
+        name: "McDonald's",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/5/22/642b77bd-1693-4df9-9557-669d298d7c34_23682.JPG",
+        locality: "HSR Layout",
+        cuisines: ["Burgers", "Beverages", "Cafe", "Desserts"],
+        avgRating: 4.4,
+        sla: { deliveryTime: 19 },
+        aggregatedDiscountInfoV3: { subHeader: "UPTO ₹80" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
+        id: "57283",
+        name: "Burger King",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/24/049a53cb-230b-44d9-bae3-5477f719c2d1_57283.jpg",
+        locality: "HSR Layout",
+        cuisines: ["Burgers", "American"],
+        avgRating: 4.2,
+        sla: { deliveryTime: 19 },
+        aggregatedDiscountInfoV3: { subHeader: "AT ₹139" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
+        id: "167636",
+        name: "Easybites By Empire",
+        cloudinaryImageId: "67aa20d5bff8c2d59a5ebd3e700daa25",
+        locality: "HSR Layout 6th Sector",
+        cuisines: ["Snacks", "Fast Food", "Beverages"],
+        avgRating: 4.4,
+        sla: { deliveryTime: 30 },
+        aggregatedDiscountInfoV3: { subHeader: "ABOVE ₹249" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
+        id: "895461",
+        name: "Wendy's Burgers",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/11/54f06f7b-3a32-442b-a554-1ca00deae383_895461.JPG",
+        locality: "27th Main Road, HSR Layout",
+        cuisines: ["Burgers", "American", "Fast Food", "Snacks"],
+        avgRating: 4.2,
+        sla: { deliveryTime: 25 },
+        aggregatedDiscountInfoV3: { subHeader: "UPTO ₹126" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
+        id: "1004727",
+        name: "Mr Phillys American Cheeseburgers",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2025/2/13/c41fe099-61b1-45cd-af96-9eee8d87e119_1004721.jpg",
+        locality: "HSR Layout Sector 4",
+        cuisines: [
+          "American",
+          "Biryani",
+          "Fast Food",
+          "Burgers",
+          "wrap",
+          "Salads",
+        ],
+        avgRating: 4.4,
+        sla: { deliveryTime: 19 },
+        aggregatedDiscountInfoV3: { subHeader: "ABOVE ₹249" },
+      },
+    },
+  },
+  {
+    card: {
+      info: {
+        id: "17036",
+        name: "Leon's - Burgers & Wings (Leon Grill)",
+        cloudinaryImageId:
+          "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/14/33319107-783d-4484-97e8-2fac21b4c9b7_17036.jpg",
+        locality: "HSR Layout",
+        cuisines: [
+          "American",
+          "Snacks",
+          "Turkish",
+          "Portuguese",
+          "Continental",
+        ],
+        avgRating: 4.4,
+        sla: { deliveryTime: 22 },
+        aggregatedDiscountInfoV3: { subHeader: "UPTO ₹146" },
       },
     },
   },
