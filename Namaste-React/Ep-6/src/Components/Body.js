@@ -6,8 +6,8 @@ import Shimmer from "./Shimmer";
 
 const Body = () => {
   //Local State Variable - Superpowerful variable
-  const [listOfRestaurants, setListOfRestaurants] = useState(resList||[]);
-  const [filteredRestaurant, setFilteredRestaurant] = useState(resList ||[]);
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
 
   //Normal js Variable
@@ -81,6 +81,9 @@ const Body = () => {
   //and whenever you type something the react re-render the component. whole component the re-render
   console.log("Body Rendered!");
 
+  //React is re-render the body component, but it's only updates the input box value inside the DOM, 
+  //DOM Manipulation is most expensive, react is very effcintly doing this in UI.
+
   //Third rendered
   useEffect(() => {
     // console.log("useEffect Called!")
@@ -137,13 +140,13 @@ const Body = () => {
             onClick={() => {
               //Filter the Restraunt cards and update the UI
               console.log(searchText);
-              const filteredRestaurant = listOfRestaurants.filter(
+              const filteredList = listOfRestaurants.filter(
                 (restaurant) =>
                   restaurant.info.name
                     .toLowerCase()
                     .includes(searchText.toLowerCase())
               );
-              setFilteredRestaurant(filteredRestaurant);
+              setFilteredRestaurant(filteredList);
             }}
           >
             Search

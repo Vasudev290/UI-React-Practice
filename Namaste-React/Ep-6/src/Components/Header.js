@@ -2,7 +2,8 @@ import { useState } from "react";
 import { LOGO_URL } from "../utils/ConstantData";
 const Header = () => {
   let btnName = "Login";
-  const [btnNameReact, setBtnNameReact] = useState("Login");
+  // const [btnNameReact, setBtnNameReact] = useState("Login");
+  const [btnNameReact, setBtnNameReact] = useState(true);
   return (
     <div className="header">
       <div className="logo-container">
@@ -15,7 +16,7 @@ const Header = () => {
           <li>Contact us</li>
           <li>Cart</li>
           {/* <button className="login" onClick={() => { btnName = "Logout" ,console.log(btnName) }}>{btnName}</button> */}
-          <button
+          {/* <button
             className="login"
             onClick={() =>
               btnNameReact === "Login"
@@ -24,6 +25,12 @@ const Header = () => {
             }
           >
             {btnNameReact}
+          </button> */}
+          <button
+            className="login"
+            onClick={() => setBtnNameReact((prev) => !prev)}
+          >
+            {btnNameReact ? "Login" : "Logout"}
           </button>
         </ul>
       </div>
@@ -32,3 +39,4 @@ const Header = () => {
 };
 
 export default Header;
+ 
