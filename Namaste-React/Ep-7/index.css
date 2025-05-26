@@ -1,0 +1,131 @@
+/* Header Section */
+.header {
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+}
+.logo {
+  width: 230px;
+  padding-top: 10px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.nav-item {
+  font-size: 25px;
+}
+.nav-item ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  padding: 10px;
+  margin: 50px;
+}
+
+/* Body */
+
+.body {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+.search {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
+}
+.search-bar {
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.search button {
+  padding: 8px 16px;
+  background-color: #3f51b5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #303f9f;
+}
+.res-card {
+  flex: 0 1 calc(18% - 20px);
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.res-card:hover {
+  transform: scale(1.05);
+}
+
+.res-logo {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.res-container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px;
+   justify-content: flex-start;
+}
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.filter-btn {
+  margin: 10px 25px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.filter-btn:hover {
+  transform: scale(1.05);
+}
+
+.shimmer-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shimmer-card{
+  flex: 0 1 calc(18% - 20px);
+  border-radius: 10px;
+  width: 200px;
+  height: 400px;
+  background-color: #f0f0f0;
+  margin: 20px;
+}
+
+.login {
+  padding: 10px 25px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+
+.login:hover {
+  transform: scale(1.05);
+}
