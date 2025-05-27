@@ -6,3 +6,6 @@ export const CDN_URL =
 
 export const API_VAILD_URL =
   "https://www.swiggy.com/mapi/restaurants/list/v5?lat=12.9027471&lng=77.6349979&collection=83639&tags=layout_CCS_Biryani&sortBy=&filters=&type=rcv2&offset=0&carousel=true&third_party_vendor=1";
+
+export const MENU_API_URL =
+  "https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.9659309&lng=77.6660634&restaurantId=";

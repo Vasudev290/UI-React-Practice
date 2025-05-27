@@ -3,11 +3,12 @@ import RestaurentCard from "./RestaurentCard";
 import resList from "../utils/mockData";
 import { API_VAILD_URL } from "../utils/ConstantData";
 import Shimmer from "./Shimmer";
+import { Link } from 'react-router-dom'
 
 const Body = () => {
   //Local State Variable - Superpowerful variable
-  const [listOfRestaurants, setListOfRestaurants] = useState([]);
-  const [filteredRestaurant, setFilteredRestaurant] = useState([]);
+  const [listOfRestaurants, setListOfRestaurants] = useState(resList||[]);
+  const [filteredRestaurant, setFilteredRestaurant] = useState(resList||[]);
   const [searchText, setSearchText] = useState("");
 
   //Normal js Variable
@@ -158,7 +159,7 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filteredRestaurant.map((restaurant) => (
-          <RestaurentCard key={restaurant.info.id} resData={restaurant} />
+         <Link key={restaurant.info.id} to={'/restaurant/' + restaurant.info.id}><RestaurentCard resData={restaurant} /></Link> 
         ))}
       </div>
     </div>

@@ -129,3 +129,147 @@
 .login:hover {
   transform: scale(1.05);
 }
+
+/* RestaurantMenu */
+.menu-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.restaurant-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.restaurant-header img {
+  width: 200px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-header h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+}
+
+.restaurant-header h4 {
+  margin: 0 0 0.5rem 0;
+  color: #555;
+}
+
+.restaurant-header p {
+  margin: 0;
+  font-weight: bold;
+  color: green;
+}
+
+.menu-items {
+  margin-top: 2rem;
+}
+
+.menu-items h2 {
+  margin-bottom: 1rem;
+}
+
+.menu-items ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  color: #333;
+}
+
+.menu-items li {
+  margin-bottom: 0.5rem;
+}
+/* Container for each menu category */
+.menu-category {
+  margin-bottom: 32px;
+}
+
+/* Title for each category */
+.category-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+/* Menu item card layout */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px 0;
+  border-bottom: 1px solid #ddd;
+  gap: 20px;
+}
+
+/* Left side - text info */
+.item-details {
+  flex: 1;
+}
+
+/* Item name */
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #111;
+}
+
+/* Price */
+.item-price {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+/* Star rating */
+.item-rating {
+  font-size: 14px;
+  color: green;
+  margin-bottom: 4px;
+}
+
+/* Description */
+.item-description {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Right side - image and button */
+.item-image-container {
+  width: 130px;
+  text-align: center;
+}
+
+/* Image */
+.item-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 8px;
+}
+
+/* ADD button */
+.add-button {
+  padding: 6px 12px;
+  background-color: #fff;
+  color: green;
+  border: 1px solid green;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-button:hover {
+  background-color: #f0fff0;
+}
