@@ -60,7 +60,7 @@ const RestaurantMenu = () => {
   const { name, cuisines, cloudinaryImageId, costForTwoMessage, avgRating } =
     resInfo[0]?.info;
 
-  const imageUrl =  CDN_URL + cloudinaryImageId;
+  const imageUrl = CDN_URL + cloudinaryImageId;
 
   return (
     <div className="menu-container">
@@ -97,7 +97,7 @@ const RestaurantMenu = () => {
                   <div className="item-image-container">
                     {item.imageId && (
                       <img
-                        src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/${item.imageId}`}
+                        src={CDN_URL + item.imageId}
                         alt={item.name}
                         className="item-image"
                       />

@@ -3,12 +3,12 @@ import RestaurentCard from "./RestaurentCard";
 import resList from "../utils/mockData";
 import { API_VAILD_URL } from "../utils/ConstantData";
 import Shimmer from "./Shimmer";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Body = () => {
   //Local State Variable - Superpowerful variable
-  const [listOfRestaurants, setListOfRestaurants] = useState(resList||[]);
-  const [filteredRestaurant, setFilteredRestaurant] = useState(resList||[]);
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
+  const [filteredRestaurant, setFilteredRestaurant] = useState([]);
   const [searchText, setSearchText] = useState("");
 
   //Normal js Variable
@@ -82,7 +82,7 @@ const Body = () => {
   //and whenever you type something the react re-render the component. whole component the re-render
   console.log("Body Rendered!");
 
-  //React is re-render the body component, but it's only updates the input box value inside the DOM, 
+  //React is re-render the body component, but it's only updates the input box value inside the DOM,
   //DOM Manipulation is most expensive, react is very effcintly doing this in UI.
 
   //Third rendered
@@ -108,7 +108,7 @@ const Body = () => {
 
       // Set the restaurant data
       setListOfRestaurants(restaurantCards);
-      setFilteredRestaurant(restaurantCards)
+      setFilteredRestaurant(restaurantCards);
     } catch (error) {
       console.log("Error Message :", error);
     }
@@ -141,11 +141,10 @@ const Body = () => {
             onClick={() => {
               //Filter the Restraunt cards and update the UI
               console.log(searchText);
-              const filteredList = listOfRestaurants.filter(
-                (restaurant) =>
-                  restaurant.info.name
-                    .toLowerCase()
-                    .includes(searchText.toLowerCase())
+              const filteredList = listOfRestaurants.filter((restaurant) =>
+                restaurant.info.name
+                  .toLowerCase()
+                  .includes(searchText.toLowerCase())
               );
               setFilteredRestaurant(filteredList);
             }}
@@ -159,7 +158,12 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filteredRestaurant.map((restaurant) => (
-         <Link key={restaurant.info.id} to={'/restaurant/' + restaurant.info.id}><RestaurentCard resData={restaurant} /></Link> 
+          <Link
+            key={restaurant.info.id}
+            to={"/restaurant/" + restaurant.info.id}
+          >
+            <RestaurentCard resData={restaurant} />
+          </Link>
         ))}
       </div>
     </div>
