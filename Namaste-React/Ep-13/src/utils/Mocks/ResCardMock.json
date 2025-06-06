@@ -1,0 +1,89 @@
+{
+    "@type": "type.googleapis.com/swiggy.presentation.food.v2.Restaurant",
+    "info": {
+        "id": "349608",
+        "name": "Sharief Bhai Biryani",
+        "cloudinaryImageId": "FOOD_CATALOG/IMAGES/CMS/2024/11/21/53cdb235-e50e-41b4-8d55-de276c3deb7c_90a1c3bb-989a-4db2-9440-80d403adb3d1.jpg",
+        "locality": "Bommanahalli",
+        "areaName": "Bommanahalli",
+        "costForTwo": "₹400 for two",
+        "cuisines": [
+            "Biryani",
+            "South Indian",
+            "Kebabs",
+            "Ramzan Special",
+            "Sweets",
+            "Beverages"
+        ],
+        "avgRating": 4.1,
+        "parentId": "469102",
+        "avgRatingString": "4.1",
+        "totalRatingsString": "9.8K+",
+        "promoted": true,
+        "adTrackingId": "cid=29943746~p=1~adgrpid=29943746#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=349608~plpr=COLLECTION~eid=a6f943f6-dfd9-49d9-8cd1-009d5504a7c6~srvts=1749204355023~collid=83639",
+        "sla": {
+            "deliveryTime": 23,
+            "lastMileTravel": 2,
+            "serviceability": "SERVICEABLE",
+            "slaString": "20-25 mins",
+            "lastMileTravelString": "2.0 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2025-06-06 23:59:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "textBased": {},
+                "imageBased": {},
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "ITEMS",
+            "subHeader": "AT ₹199",
+            "logoCtx": {
+                "text": "BENEFITS"
+            }
+        },
+        "orderabilityCommunication": {
+            "title": {},
+            "subTitle": {},
+            "message": {},
+            "customIcon": {},
+            "commsStyling": {}
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "4.0",
+                "ratingCount": "5.0K+"
+            },
+            "source": "GOOGLE",
+            "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+        "campaignId": "29943746"
+    },
+    "analytics": {},
+    "cta": {
+        "link": "swiggy://menu?restaurant_id=349608&source=collection&query=Biryani",
+        "text": "RESTAURANT_MENU",
+        "type": "DEEPLINK"
+    },
+    "widgetId": "collectionV5RestaurantListWidget_SimRestoRelevance_food"
+}
